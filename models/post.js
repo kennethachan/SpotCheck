@@ -1,7 +1,5 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
+"use strict"
+const { Model } = require("sequelize")
 module.exports = (sequelize, DataTypes) => {
   class Post extends Model {
     /**
@@ -10,20 +8,57 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      Post.belongsTo(models.Borough, { foreignKey: "boroughId" })
+      Post.belongsTo(models.Profile, { foreignKey: "profileId" })
     }
   }
-  Post.init({
-    name: DataTypes.STRING,
-    image: DataTypes.TEXT,
-    description: DataTypes.TEXT,
-    bustLevel: DataTypes.STRING,
-    address: DataTypes.STRING,
-    profileId: DataTypes.INTEGER,
-    boroughId: DataTypes.INTEGER
-  }, {
-    sequelize,
-    modelName: 'Post',
-  });
-  return Post;
-};
+  Post.init(
+    {
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+
+      image: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+      },
+
+      description: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+      },
+
+      bustLevel: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+
+      address: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+
+      profileId: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+      },
+
+      boroughId: {
+        type: DataTypes.INTEGER,
+        type: DataTypes.INTEGER,
+        onDelete: "CASCADE",
+        references: {
+          model: "boroughs",
+          key: "id",
+        },
+      },
+    },
+    {
+      sequelize,
+      modelName: "Post",
+      tableName: "posts",
+    }
+  )
+  return Post
+}
