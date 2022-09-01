@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/kennethachan/SpotCheck#readme",
   "dependencies": {
+    "@ngneat/falso": "^6.1.0",
     "pg": "^8.8.0",
     "sequelize": "^6.21.4"
   }

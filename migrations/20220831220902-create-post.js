@@ -35,14 +35,6 @@ module.exports = {
           key: "id",
         },
       },
-      // boroughId: {
-      //   type: Sequelize.INTEGER,
-      //   onDelete: "CASCADE",
-      //   references: {
-      //     model: "boroughs",
-      //     key: "id",
-      //   },
-      // },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
