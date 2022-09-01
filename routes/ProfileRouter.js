@@ -9,10 +9,10 @@ Router.get(
   controller.CheckSession
 )
 
-Router.get("/get-profiles", controller.GetPosts)
-Router.get("/get-profile", controller.GetPostById)
-Router.post("/new-profiles", controller.CreatePost)
-Router.put("/:profile_id", controller.UpdatePost)
-Router.delete("/:profile_id", controller.DeletePost)
+Router.get("/get-profiles", controller.GetProfiles)
+Router.get("/get-profile/:profile_id", controller.GetProfileById)
+Router.post("/new-profiles", controller.CreateProfile)
+Router.put("/:profile_id", controller.UpdateProfile)
+Router.delete("/:profile_id", controller.DeleteProfile)
 
 module.exports = Router
