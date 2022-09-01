@@ -33,14 +33,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.TEXT,
         allowNull: false,
       },
-      postId: {
-        type: DataTypes.INTEGER,
-        onDelete: "CASCADE",
-        references: {
-          model: "profiles",
-          key: "id",
-        },
-      },
     },
     {
       sequelize,

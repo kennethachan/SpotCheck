@@ -41,11 +41,14 @@ module.exports = (sequelize, DataTypes) => {
 
       profileId: {
         type: DataTypes.INTEGER,
-        allowNull: false,
+        onDelete: "CASCADE",
+        references: {
+          model: "profiles",
+          key: "id",
+        },
       },
 
       boroughId: {
-        type: DataTypes.INTEGER,
         type: DataTypes.INTEGER,
         onDelete: "CASCADE",
         references: {
