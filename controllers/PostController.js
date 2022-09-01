@@ -1,8 +1,15 @@
-const { Post, Borough } = require("../models")
+const { Post, Borough, Profile } = require("../models")
 
 const GetPosts = async (req, res) => {
   try {
-    const posts = await Post.findAll()
+    const posts = await Post.findAll({
+      include: [
+        {
+          model: Profile,
+          attributes: ["userName", "id", "image"],
+        },
+      ],
+    })
     res.send(posts)
   } catch (error) {
     throw error
@@ -11,7 +18,14 @@ const GetPosts = async (req, res) => {
 
 const GetPostById = async (req, res) => {
   try {
-    const post = await Post.findByPk(req.params.post_id)
+    const post = await Post.findByPk(req.params.post_id, {
+      include: [
+        {
+          model: Profile,
+          attributes: ["userName", "id", "image"],
+        },
+      ],
+    })
     res.send({ post })
   } catch (error) {
     throw error

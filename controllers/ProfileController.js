@@ -53,15 +53,13 @@ const SignIn = async (req, res) => {
 }
 
 const CheckSession = async (req, res) => {
-  const userData = jwt.verify(res.locals.token, process.env.APP_SECRET)
-  const user = await User.findByPk(userData.id)
+  const profileData = jwt.verify(res.locals.token, process.env.APP_SECRET)
+  const profile = await Profile.findByPk(profileData.id)
   let payload = {
-    id: user.id,
-    username: user.username,
-    email: user.email,
-    city: user.city,
-    isHunter: user.isHunter,
-    profileId: user.profileId,
+    id: profile.id,
+    email: profile.email,
+    userName: profile.userName,
+    image: profile.image,
   }
   let token = middleware.createToken(payload)
   res.send({ user: payload, token })
@@ -69,7 +67,21 @@ const CheckSession = async (req, res) => {
 
 const GetProfiles = async (req, res) => {
   try {
-    const profiles = await Profile.findAll()
+    const profiles = await Profile.findAll({
+      include: [
+        {
+          model: Post,
+          attributes: [
+            "name",
+            "image",
+            "description",
+            "bustLevel",
+            "address",
+            "boroughId",
+          ],
+        },
+      ],
+    })
     res.send(profiles)
   } catch (error) {
     throw error
@@ -88,7 +100,6 @@ const GetProfileById = async (req, res) => {
             "description",
             "bustLevel",
             "address",
-            "profileId",
             "boroughId",
           ],
         },
