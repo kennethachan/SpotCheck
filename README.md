@@ -30,6 +30,11 @@
 #### When the user visits the site they will be greeted with a sign in page. If the user does not have an account they can easily click "Sign Up". After signing up you will be navigated back to the sign in page where the user will be able to sign in with their newly made account. After signing in the user will be navigated to the feed. The user will be able to scroll through the feed and browse through all the newly found skate spots in NYC! The user will be able to use the navbar to either filter their search by Borough or visit their page where they will be able create, update or delete a post.
 
 ---
+### **Post MVP**
+
+#### User will be able to click on the address of a street spot and will be navigated to another page that will show them the exact location with a marker on the map utlizing mapbox/google maps direction API.  The user will be able to also look up directions utilizing the dirctions interface.
+
+---
 
 ### **_Screenshots_**
 
