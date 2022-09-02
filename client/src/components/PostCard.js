@@ -4,9 +4,9 @@ import "./PostCard.css"
 function PostCard(props) {
   return (
     <div>
-      <div className="postbyborough-wrapper">
+      <div className="postbyborough-wrapper" onClick={props.onClick}>
         <div className="postbyborough-card">
-          <div className="post-info-container" onClick={props.onClick}>
+          <div className="post-info-container">
             <img className="postbyborough-img" src={props.image}></img>
             <p className="post-name">{props.name} </p>
           </div>

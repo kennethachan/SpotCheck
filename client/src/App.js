@@ -12,6 +12,7 @@ import SpotsByBorough from "./pages/SpotsByBorough"
 import UpdatePost from "./pages/UpdatePost"
 import UpdateProfile from "./pages/UpdateProfile"
 import ViewSpotsByBorough from "./pages/ViewSpotsByBorough"
+import SpotDetails from "./pages/SpotDetails"
 
 const URL = "http://localhost:3001"
 
@@ -90,6 +91,7 @@ function App() {
             path="/get-posts/:boroughId"
             element={<ViewSpotsByBorough />}
           />
+          <Route path="/spotdetails/:postId" element={<SpotDetails />} />
           <Route
             path="/update-post"
             element={

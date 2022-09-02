@@ -40,7 +40,7 @@ function ViewSpotsByBorough(props) {
             <PostCard
               key={spot.id}
               onClick={() => {
-                navigate(`/posts/byprofile/${spot.id}`)
+                navigate(`/spotdetails/${spot.id}`)
               }}
               image={spot.image}
               name={spot.name}
