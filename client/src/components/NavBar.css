@@ -1,0 +1,21 @@
+.navbar {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.nav-link {
+    margin-right:20px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+}
+
+.welcome {
+    display: inline-flex;
+    color: white;
+    font-weight: bold;
+    margin-right:20px;
+}

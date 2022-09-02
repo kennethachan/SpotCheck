@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { SignInUser } from "../services/Auth"
+import "./Signin.css"
 
 function Signin(props) {
   let navigate = useNavigate()
@@ -21,14 +22,14 @@ function Signin(props) {
     navigate("/feed")
   }
   return (
-    <div className="signInBody">
+    <div className="signin-body">
       <div className="signin-container">
         <div className="signin-background">
           <form className="signin-form" onSubmit={handleSubmit}>
             <h1>Sign In</h1>
-            <hr></hr>
             <div className="input-wrapper">
               <input
+                className="input"
                 onChange={handleChange}
                 name="userName"
                 type="text"
@@ -39,6 +40,7 @@ function Signin(props) {
             </div>
             <div className="input-wrapper">
               <input
+                className="input"
                 onChange={handleChange}
                 type="password"
                 name="password"
@@ -53,7 +55,6 @@ function Signin(props) {
             >
               Sign In
             </button>
-            <hr></hr>
             <div className="link-switch">
               <Link className="signup-link" to="/signup">
                 Don't have an account?

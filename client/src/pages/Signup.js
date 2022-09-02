@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
+import "./Signup.css"
 
 const URL = "http://localhost:3001"
 
@@ -47,9 +48,9 @@ function Signup(props) {
           <div className="signup-background">
             <form className="signup-form" onSubmit={handleSubmit}>
               <h1>Sign Up</h1>
-              <hr></hr>
               <div className="input-wrapper">
                 <input
+                  className="input"
                   onChange={handleChange}
                   name="email"
                   type="email"
@@ -60,6 +61,7 @@ function Signup(props) {
               </div>
               <div className="input-wrapper">
                 <input
+                  className="input"
                   onChange={handleChange}
                   type="password"
                   name="password"
@@ -70,6 +72,7 @@ function Signup(props) {
               </div>
               <div className="input-wrapper">
                 <input
+                  className="input"
                   onChange={handleChange}
                   name="userName"
                   type="text"
@@ -80,6 +83,7 @@ function Signup(props) {
               </div>
               <div className="input-wrapper">
                 <input
+                  className="input"
                   onChange={handleChange}
                   type="text"
                   name="image"
@@ -98,9 +102,8 @@ function Signup(props) {
               >
                 Sign Up
               </button>
-              <hr></hr>
               <div className="link-switch">
-                <Link className="link signLink" to="/">
+                <Link className="signup-link" to="/">
                   Already have an account?
                 </Link>
               </div>

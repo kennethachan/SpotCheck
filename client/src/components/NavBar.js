@@ -1,15 +1,20 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import "./NavBar.css"
 
 const NavBar = ({ authenticated, profile, handleLogOut }) => {
   let authenticatedOptions
   if (profile) {
     authenticatedOptions = (
-      <nav>
-        <h3>Welcome {profile.userName}!</h3>
-        <Link to="/feed">Feed</Link>
-        <Link to="/spots-by-borough">Spots By Borough</Link>
-        <Link onClick={handleLogOut} to="/">
+      <nav className="navbar">
+        <h3 className="welcome">Welcome {profile.userName}!</h3>
+        <Link className="nav-link" to="/feed">
+          Feed
+        </Link>
+        <Link className="nav-link" to="/spots-by-borough">
+          Spots By Borough
+        </Link>
+        <Link className="nav-link" onClick={handleLogOut} to="/">
           Sign Out
         </Link>
       </nav>
@@ -17,10 +22,13 @@ const NavBar = ({ authenticated, profile, handleLogOut }) => {
   }
 
   const publicOptions = (
-    <nav>
-      <Link to="/feed">Feed</Link>
-      <Link to="/spots-by-borough">Spots By Borough</Link>
-      <Link to="/">Sign In</Link>
+    <nav className="navbar">
+      <Link className="nav-link" to="/feed">
+        Feed
+      </Link>
+      <Link className="nav-link" to="/spots-by-borough">
+        Spots By Borough
+      </Link>
     </nav>
   )
 
