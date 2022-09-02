@@ -27,12 +27,15 @@ function ViewSpotsByBorough(props) {
   return (
     <div>
       <div>
-        <div className="cat-link">
-          <Link className="cat-link" to="/spots-by-borough">
-            Back To Boroughs
-          </Link>
+        <div className="">
+          <p className="back-to-boroughs">
+            <Link className="back-to-boroughs" to="/spots-by-borough">
+              {" "}
+              Back To Boroughs
+            </Link>
+          </p>
         </div>
-        <div className="posts-container">
+        <div className="postbyborough-container">
           {spots.map((spot) => (
             <PostCard
               key={spot.id}
@@ -41,9 +44,6 @@ function ViewSpotsByBorough(props) {
               }}
               image={spot.image}
               name={spot.name}
-              description={spot.description}
-              address={spot.address}
-              bustLevel={spot.bustLevel}
             />
           ))}
         </div>
