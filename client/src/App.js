@@ -11,6 +11,7 @@ import Signup from "./pages/Signup"
 import SpotsByBorough from "./pages/SpotsByBorough"
 import UpdatePost from "./pages/UpdatePost"
 import UpdateProfile from "./pages/UpdateProfile"
+import ViewSpotsByBorough from "./pages/ViewSpotsByBorough"
 
 const URL = "http://localhost:3001"
 
@@ -84,6 +85,10 @@ function App() {
           <Route
             path="/spots-by-borough"
             element={<SpotsByBorough handleLogOut={handleLogOut} />}
+          />
+          <Route
+            path="/get-posts/:boroughId"
+            element={<ViewSpotsByBorough />}
           />
           <Route
             path="/update-post"
