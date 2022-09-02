@@ -1,7 +1,7 @@
-import logo from "./logo.svg"
 import "./App.css"
 import { Route, Routes } from "react-router"
 import { useState, useEffect } from "react"
+import { CheckSession } from "./services/Auth"
 import axios from "axios"
 import NavBar from "./components/NavBar"
 import Feed from "./pages/Feed"
@@ -26,7 +26,7 @@ function App() {
       console.log(res.data)
       setPost(res.data)
     }
-    getSkills()
+    getPosts()
   }, [])
 
   useEffect(() => {
@@ -44,7 +44,7 @@ function App() {
   }
 
   const handleLogOut = () => {
-    setUser(null)
+    setProfile(null)
     toggleAuthenticated(false)
     localStorage.clear()
   }

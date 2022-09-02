@@ -6,7 +6,7 @@ import { SignInUser } from "../services/Auth"
 
 function Signin(props) {
   let navigate = useNavigate()
-  const [formValues, setFormValues] = useState({ username: "", password: "" })
+  const [formValues, setFormValues] = useState({ userName: "", password: "" })
 
   const handleChange = (e) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value })
@@ -15,8 +15,8 @@ function Signin(props) {
   const handleSubmit = async (e) => {
     e.preventDefault()
     const payload = await SignInUser(formValues)
-    setFormValues({ username: "", password: "" })
-    props.setUser(payload)
+    setFormValues({ userName: "", password: "" })
+    props.setProfile(payload)
     props.toggleAuthenticated(true)
     navigate("/feed")
   }
@@ -30,10 +30,10 @@ function Signin(props) {
             <div className="input-wrapper">
               <input
                 onChange={handleChange}
-                name="username"
+                name="userName"
                 type="text"
                 placeholder="Username"
-                value={formValues.username}
+                value={formValues.userName}
                 required
               />
             </div>
@@ -49,7 +49,7 @@ function Signin(props) {
             </div>
             <button
               className="signin-btn"
-              disabled={!formValues.username || !formValues.password}
+              disabled={!formValues.userName || !formValues.password}
             >
               Sign In
             </button>

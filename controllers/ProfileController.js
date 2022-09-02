@@ -9,7 +9,7 @@ const SignUp = async (req, res) => {
     let passwordDigest = await middleware.hashPassword(password)
     const profile = await Profile.create({
       email,
-      password,
+      passwordDigest,
       userName,
       image,
     })
@@ -38,9 +38,6 @@ const SignIn = async (req, res) => {
         id: profile.id,
         userName: profile.userName,
         email: profile.email,
-        city: profile.city,
-        isHunter: profile.isHunter,
-        profileId: profile.profileId,
       }
 
       let token = middleware.createToken(payload)

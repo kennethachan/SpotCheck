@@ -25,7 +25,7 @@ function Signup(props) {
     let data = {
       email: formValues.email,
       password: formValues.password,
-      username: formValues.userName,
+      userName: formValues.userName,
       image: formValues.image,
     }
 
@@ -37,7 +37,7 @@ function Signup(props) {
       userName: "",
       image: "",
     })
-    navigate("/feed")
+    navigate("/")
   }
 
   return (
@@ -67,21 +67,21 @@ function Signup(props) {
                   value={formValues.password}
                   required
                 />
-                <div className="input-wrapper">
-                  <input
-                    onChange={handleChange}
-                    name="username"
-                    type="text"
-                    placeholder="Username"
-                    value={formValues.userName}
-                    required
-                  />
-                </div>
               </div>
               <div className="input-wrapper">
                 <input
                   onChange={handleChange}
-                  type="image"
+                  name="userName"
+                  type="text"
+                  placeholder="Username"
+                  value={formValues.userName}
+                  required
+                />
+              </div>
+              <div className="input-wrapper">
+                <input
+                  onChange={handleChange}
+                  type="text"
                   name="image"
                   placeholder="Profile Image"
                   value={formValues.image}
