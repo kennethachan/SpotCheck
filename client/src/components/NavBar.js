@@ -11,6 +11,9 @@ const NavBar = ({ authenticated, profile, handleLogOut }) => {
         <Link className="nav-link" to="/feed">
           Feed
         </Link>
+        <Link className="nav-link" to="/profile">
+          Profile
+        </Link>
         <Link className="nav-link" to="/spots-by-borough">
           Spots By Borough
         </Link>
