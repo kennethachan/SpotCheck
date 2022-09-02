@@ -53,7 +53,7 @@ function SpotsByBorough(props) {
         <div className="borough-card">
           <img
             className="borough-img"
-            onClick={() => navigate(`/get-skills/${statenIsland.id}`)}
+            onClick={() => navigate(`/get-posts/${statenIsland.id}`)}
             src={ps6}
           ></img>
           <p
@@ -66,7 +66,7 @@ function SpotsByBorough(props) {
         <div className="borough-card">
           <img
             className="borough-img"
-            onClick={() => navigate(`/get-skills/${bronx.id}`)}
+            onClick={() => navigate(`/get-posts/${bronx.id}`)}
             src={ogden}
           ></img>
           <p
@@ -79,7 +79,7 @@ function SpotsByBorough(props) {
         <div className="borough-card">
           <img
             className="borough-img"
-            onClick={() => navigate(`/get-skills/${brooklyn.id}`)}
+            onClick={() => navigate(`/get-posts/${brooklyn.id}`)}
             src={mambo}
           ></img>
           <p
@@ -92,7 +92,7 @@ function SpotsByBorough(props) {
         <div className="borough-card">
           <img
             className="borough-img"
-            onClick={() => navigate(`/get-skills/${queens.id}`)}
+            onClick={() => navigate(`/get-posts/${queens.id}`)}
             src={flushing}
           ></img>
           <p

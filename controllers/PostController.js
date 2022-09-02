@@ -38,7 +38,15 @@ const GetPostsByBoroughId = async (req, res) => {
       include: [
         {
           model: Post,
-          attributes: ["name", "id"],
+          attributes: [
+            "name",
+            "id",
+            "image",
+            "description",
+            "bustLevel",
+            "address",
+            "profileId",
+          ],
         },
       ],
     })
