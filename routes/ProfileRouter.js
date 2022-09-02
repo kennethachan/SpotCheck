@@ -15,4 +15,6 @@ Router.post("/new-profile", controller.CreateProfile)
 Router.put("/:profile_id", controller.UpdateProfile)
 Router.delete("/:profile_id", controller.DeleteProfile)
 
+Router.post("/register-profile", controller.SignUp)
+Router.post("/login", controller.SignIn)
 module.exports = Router
