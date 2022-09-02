@@ -2,12 +2,14 @@ import React from "react"
 import { useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react"
 import axios from "axios"
+import "./Feed.css"
 
 const URL = "http://localhost:3001"
 
 function Feed(props) {
   let navigate = useNavigate()
   const [posts, setPosts] = useState([])
+  const [profile, setProfile] = useState([])
 
   useEffect(() => {
     getPosts()
@@ -20,26 +22,44 @@ function Feed(props) {
   }
 
   return (
-    <div className="post-container">
-      {posts
-        .slice(0)
-        .reverse()
-        .map((post) => (
-          <div
-            className="post-card"
-            key={post.id}
-            onClick={() => {
-              navigate(`/view-profile/${post.id}`)
-            }}
-          >
-            <img src={post.image} alt="post-content" />
-            <h3>{post.name}</h3>
-            <div className="post-info">
-              <p>Address: {post.address}</p>
-              <p>Bust Level:{post.bustLevel}</p>
+    <div>
+      <div className="post-container">
+        {posts
+          .slice(0)
+          .reverse()
+          .map((post) => (
+            <div className="post-card" key={post.id}>
+              <div className="post-info-container">
+                <img className="post-img" src={post.image} alt="post-content" />
+                <h3 className="post-name">{post.name}</h3>
+
+                <div className="post-info">
+                  <p>{post.description}</p>
+                  <p>
+                    <span className="bold">Address:</span> {post.address}
+                  </p>
+                  <p>
+                    <span className="bold">Bust Level: </span>
+                    {post.bustLevel}
+                  </p>
+                </div>
+                <div className="post-profile-info">
+                  <p>
+                    <span className="bold">Submitted by:</span>{" "}
+                    <img
+                      className="profile-icon"
+                      src={post.Profile.image}
+                      onClick={() => {
+                        navigate(`/view-profile/${post.id}`)
+                      }}
+                    ></img>
+                    {post.Profile.userName}{" "}
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+      </div>
     </div>
   )
 }

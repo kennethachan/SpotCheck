@@ -1,20 +1,23 @@
+
+
 .signin-form {
     display: block;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    background: rgb(255, 255, 255);
+    background: #FAF9F6;
+    color: #1e2832;
     padding: 30px;
     width: 200px;
     border-radius: 20px;
-    margin-top: 250px;
+    margin-top: 170px;
 }
 
 .input {
     border: none;
     background: transparent;
     outline: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid  #1e2832;
     margin-bottom: 25px;
 }
 
@@ -26,20 +29,20 @@
     margin-bottom: 20px;
     width: 100px;
     height: 40px;
-    background-color: black;
-    color: white;
+    background-color: #1e2832;
+    color: #FAF9F6;
     cursor: pointer;
 }
 
 .signin-btn:hover {
-    background-color: white;
-    color: black;
+    background-color: #FAF9F6;
+    color:  #1e2832;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .signup-link {
-    color: black;
+    color:  #1e2832;
     text-decoration: none;
 }
 

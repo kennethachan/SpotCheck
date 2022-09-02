@@ -6,33 +6,43 @@ const NavBar = ({ authenticated, profile, handleLogOut }) => {
   let authenticatedOptions
   if (profile) {
     authenticatedOptions = (
-      <nav className="navbar">
-        <h3 className="welcome">Welcome {profile.userName}!</h3>
-        <Link className="nav-link" to="/feed">
-          Feed
-        </Link>
-        <Link className="nav-link" to="/profile">
-          Profile
-        </Link>
-        <Link className="nav-link" to="/spots-by-borough">
-          Spots By Borough
-        </Link>
-        <Link className="nav-link" onClick={handleLogOut} to="/">
-          Sign Out
-        </Link>
-      </nav>
+      <div className="nav-container">
+        <div>
+          <h2 className="logo">SpotCheck</h2>
+        </div>
+        <nav className="navbar">
+          <p className="welcome">Welcome {profile.userName}!</p>
+          <Link className="nav-link" to="/feed">
+            Feed
+          </Link>
+          <Link className="nav-link" to="/profile">
+            Profile
+          </Link>
+          <Link className="nav-link" to="/spots-by-borough">
+            Spots By Borough
+          </Link>
+          <Link className="nav-link" onClick={handleLogOut} to="/">
+            Sign Out
+          </Link>
+        </nav>
+      </div>
     )
   }
 
   const publicOptions = (
-    <nav className="navbar">
-      <Link className="nav-link" to="/feed">
-        Feed
-      </Link>
-      <Link className="nav-link" to="/spots-by-borough">
-        Spots By Borough
-      </Link>
-    </nav>
+    <div className="nav-container">
+      <div>
+        <h2 className="logo">SpotCheck</h2>
+      </div>
+      <nav className="navbar">
+        <Link className="nav-link" to="/feed">
+          Feed
+        </Link>
+        <Link className="nav-link" to="/spots-by-borough">
+          Spots By Borough
+        </Link>
+      </nav>
+    </div>
   )
 
   return (

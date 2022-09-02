@@ -4,6 +4,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { SignInUser } from "../services/Auth"
 import "./Signin.css"
+import pipegap from "../assets/pipe-gap.jpeg"
 
 function Signin(props) {
   let navigate = useNavigate()
@@ -22,45 +23,47 @@ function Signin(props) {
     navigate("/feed")
   }
   return (
-    <div className="signin-body">
-      <div className="signin-container">
-        <div className="signin-background">
-          <form className="signin-form" onSubmit={handleSubmit}>
-            <h1>Sign In</h1>
-            <div className="input-wrapper">
-              <input
-                className="input"
-                onChange={handleChange}
-                name="userName"
-                type="text"
-                placeholder="Username"
-                value={formValues.userName}
-                required
-              />
-            </div>
-            <div className="input-wrapper">
-              <input
-                className="input"
-                onChange={handleChange}
-                type="password"
-                name="password"
-                placeholder="Password"
-                value={formValues.password}
-                required
-              />
-            </div>
-            <button
-              className="signin-btn"
-              disabled={!formValues.userName || !formValues.password}
-            >
-              Sign In
-            </button>
-            <div className="link-switch">
-              <Link className="signup-link" to="/signup">
-                Don't have an account?
-              </Link>
-            </div>
-          </form>
+    <div>
+      <div className="signin-body">
+        <div className="signin-container">
+          <div className="signin-background">
+            <form className="signin-form" onSubmit={handleSubmit}>
+              <h1>Sign In</h1>
+              <div className="input-wrapper">
+                <input
+                  className="input"
+                  onChange={handleChange}
+                  name="userName"
+                  type="text"
+                  placeholder="Username"
+                  value={formValues.userName}
+                  required
+                />
+              </div>
+              <div className="input-wrapper">
+                <input
+                  className="input"
+                  onChange={handleChange}
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  value={formValues.password}
+                  required
+                />
+              </div>
+              <button
+                className="signin-btn"
+                disabled={!formValues.userName || !formValues.password}
+              >
+                Sign In
+              </button>
+              <div className="link-switch">
+                <Link className="signup-link" to="/signup">
+                  Don't have an account?
+                </Link>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>

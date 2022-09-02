@@ -1,0 +1,58 @@
+.post-container {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 30px;
+  
+}
+
+.post-card {
+    width: 400px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-profile-info {
+    display: block;
+    text-align: left;
+}
+
+.profile-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+}
+
+.post-info-container{
+    background-color: #FAF9F6;
+    border-radius: 10px;
+    padding: 0px 25px 25px 25px;
+
+}
+
+.post-info {
+    width: 350px;
+    text-align: left;
+    color: black;
+}
+
+.post-img {
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    right: 25px;
+}
+
+.bold {
+    font-weight: bold;
+}
