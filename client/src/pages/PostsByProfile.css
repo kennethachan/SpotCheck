@@ -1,0 +1,16 @@
+.user-info {
+    text-align: center;
+margin-top: 100px;
+}
+
+.userName {
+    color: #FAF9F6;
+    text-align: center;
+}
+
+.profile-img {
+    height: 200px;
+    width: 200px;
+    object-fit:cover;
+    border-radius: 20px;
+}
