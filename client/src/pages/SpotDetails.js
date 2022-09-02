@@ -3,14 +3,16 @@ import { useState } from "react"
 import { useEffect } from "react"
 import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import axios from "axios"
+import "./SpotDetails.css"
 
 const URL = "http://localhost:3001"
 
 function SpotDetails(props) {
   const [spot, setSpot] = useState([])
   const [profile, setProfile] = useState([])
-
+  let navigate = useNavigate()
   let { postId } = useParams()
 
   useEffect(() => {
@@ -25,20 +27,37 @@ function SpotDetails(props) {
   }
   return (
     <div>
-      <p className="back-to-boroughs">
-        <Link className="back-to-boroughs" to="/spots-by-borough">
-          {" "}
-          Back To Spots
-        </Link>
+      <p
+        className="back-to-boroughs"
+        onClick={() => navigate(`/get-posts/${spot.boroughId}`)}
+      >
+        Back To Spots
       </p>
       <div className="post-details-container">
-        <img src={spot.image}></img>
-        <p>{spot.name}</p>
-        <p>{spot.description}</p>
-        <p>{spot.address}</p>
-        <p>{spot.bustLevel}</p>
-        <p>Submitted By: {profile.userName}</p>
-        <img src={profile.image}></img>
+        <div>
+          <img className="spotdetail-image" src={spot.image}></img>
+        </div>
+        <div className="spotdetail-info">
+          <h3 className="spotdetail-name">{spot.name}</h3>
+          <p>{spot.description}</p>
+          <p>
+            <span className="bold">Address: </span>
+            {spot.address}
+          </p>
+          <p>
+            <span className="bold">BustLevel:</span> {spot.bustLevel}
+          </p>
+          <p>
+            <span className="bold">Submitted By:</span> {profile.userName}{" "}
+            <img
+              className="profile-icon"
+              src={profile.image}
+              onClick={() => {
+                navigate(`/get-profile/${profile.id}`)
+              }}
+            ></img>
+          </p>
+        </div>
       </div>
     </div>
   )

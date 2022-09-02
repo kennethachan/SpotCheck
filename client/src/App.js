@@ -13,6 +13,7 @@ import UpdatePost from "./pages/UpdatePost"
 import UpdateProfile from "./pages/UpdateProfile"
 import ViewSpotsByBorough from "./pages/ViewSpotsByBorough"
 import SpotDetails from "./pages/SpotDetails"
+import PostsByProfile from "./pages/PostsByProfile"
 
 const URL = "http://localhost:3001"
 
@@ -92,6 +93,7 @@ function App() {
             element={<ViewSpotsByBorough />}
           />
           <Route path="/spotdetails/:postId" element={<SpotDetails />} />
+          <Route path="/get-profile/:profileId" element={<PostsByProfile />} />
           <Route
             path="/update-post"
             element={
