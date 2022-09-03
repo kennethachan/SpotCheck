@@ -13,6 +13,7 @@ function NewPost({ profile }) {
     name: "",
     image: "",
     description: "",
+    address: "",
     bustLevel: "",
     profileId: profile.id,
     boroughId: "",
@@ -39,6 +40,7 @@ function NewPost({ profile }) {
       name: formValues.name,
       image: formValues.image,
       description: formValues.description,
+      address: formValues.address,
       bustLevel: formValues.bustLevel,
       profileId: profile.id,
       boroughId: formValues.boroughId,
@@ -54,6 +56,7 @@ function NewPost({ profile }) {
       name: "",
       image: "",
       description: "",
+      address: "",
       bustLevel: "",
       profileId: profile.id,
       boroughId: "",
@@ -96,6 +99,17 @@ function NewPost({ profile }) {
             type="text"
             placeholder="Description"
             value={formValues.description}
+            required
+          />
+        </div>
+        <div className="input-wrapper">
+          <input
+            className="input"
+            onChange={handleChange}
+            name="address"
+            type="text"
+            placeholder="Address"
+            value={formValues.address}
             required
           />
         </div>
