@@ -15,6 +15,7 @@ import ViewSpotsByBorough from "./pages/ViewSpotsByBorough"
 import SpotDetails from "./pages/SpotDetails"
 import PostsByProfile from "./pages/PostsByProfile"
 import ViewProfileFromFeed from "./pages/ViewProfileFromFeed"
+import NewPost from "./pages/NewPost"
 
 const URL = "http://localhost:3001"
 
@@ -98,6 +99,17 @@ function App() {
           <Route
             path="/get-profile-from-feed/:profileId"
             element={<ViewProfileFromFeed />}
+          />
+          <Route
+            path="/new-post"
+            element={
+              <NewPost
+                profile={profile}
+                post={post}
+                authenticated={authenticated}
+                handleLogOut={handleLogOut}
+              />
+            }
           />
           <Route
             path="/update-post"

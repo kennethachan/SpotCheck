@@ -19,7 +19,7 @@ const NavBar = ({ authenticated, profile, handleLogOut }) => {
         </div>
         <nav className="navbar">
           <p className="welcome">Welcome {profile.userName}!</p>
-          <Link className="nav-link nav-icon" to="/profile">
+          <Link className="nav-link nav-icon" to="/new-post">
             <img className="nav-icon" src={plus}></img>
           </Link>
           <Link className="nav-link nav-icon" to="/profile">
