@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import "./NavBar.css"
 import search from "../assets/search.png"
 import profileIcon from "../assets/profile.png"
+import plus from "../assets/plus.png"
 
 const NavBar = ({ authenticated, profile, handleLogOut }) => {
   let authenticatedOptions
@@ -18,6 +19,9 @@ const NavBar = ({ authenticated, profile, handleLogOut }) => {
         </div>
         <nav className="navbar">
           <p className="welcome">Welcome {profile.userName}!</p>
+          <Link className="nav-link nav-icon" to="/profile">
+            <img className="nav-icon" src={plus}></img>
+          </Link>
           <Link className="nav-link nav-icon" to="/profile">
             <img className="nav-icon" src={profileIcon}></img>
           </Link>
