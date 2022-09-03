@@ -33,18 +33,19 @@ function Feed(props) {
                 <h3 className="post-name">{post.name}</h3>
 
                 <div className="post-info">
-                  <p>{post.description}</p>
-                  <p>
+                  <p className="post-font-size">{post.description}</p>
+                  <p className="post-font-size">
                     <span className="bold">Address:</span> {post.address}
                   </p>
-                  <p>
+                  <p className="post-font-size">
                     <span className="bold">Bust Level: </span>
                     {post.bustLevel}
                   </p>
                 </div>
+                <hr></hr>
                 <div className="post-profile-info">
-                  <p>
-                    <span className="bold">Submitted by:</span>{" "}
+                  <p className="post-font-size">
+                    <span className="bold post-font-size">Submitted by:</span>{" "}
                     <img
                       className="profile-icon"
                       src={post.Profile.image}

@@ -1,6 +1,8 @@
 .borough-title {
     color:#FAF9F6;
     text-align: center;
+    position: relative;
+    top: 40px;
 }
 
 .borough-container {
@@ -9,7 +11,7 @@
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 79px;
 }
 
 .borough-card {

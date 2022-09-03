@@ -39,15 +39,16 @@ function SpotDetails(props) {
         </div>
         <div className="spotdetail-info">
           <h3 className="spotdetail-name">{spot.name}</h3>
-          <p>{spot.description}</p>
-          <p>
+          <p className="post-font-size">{spot.description}</p>
+          <p className="post-font-size">
             <span className="bold">Address: </span>
             {spot.address}
           </p>
-          <p>
+          <p className="post-font-size">
             <span className="bold">BustLevel:</span> {spot.bustLevel}
           </p>
-          <p>
+          <hr></hr>
+          <p className="post-font-size">
             <span className="bold">Submitted By:</span> {profile.userName}{" "}
             <img
               className="profile-icon"

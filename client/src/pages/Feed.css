@@ -5,6 +5,7 @@
     margin-right: auto;
     text-align: center;
     margin-top: 30px;
+    margin-top: 150px;
   
 }
 
@@ -16,8 +17,8 @@
 }
 
 .post-profile-info {
-    display: block;
     text-align: left;
+    height: 50px;
 }
 
 .profile-icon {
@@ -51,6 +52,10 @@
     border-top-right-radius: 10px;
     position: relative;
     right: 25px;
+}
+
+.post-font-size{
+font-size: 14px;
 }
 
 .bold {
