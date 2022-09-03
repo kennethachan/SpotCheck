@@ -34,7 +34,7 @@ function MyProfile({ profile, post }) {
   if (spot === "undefined" || spot.length == 0) {
     return (
       <div>
-        <img src={user.image}></img>
+        <img className="profile-img" src={user.image}></img>
         <h2>{user.userName}</h2>
         <h2>No Posts :(</h2>
       </div>
