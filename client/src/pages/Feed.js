@@ -46,7 +46,7 @@ function Feed(props) {
                 <hr></hr>
                 <div className="post-profile-info">
                   <p className="post-font-size">
-                    <span className="bold post-font-size">Submitted by:</span>{" "}
+                    <span className="bold post-font-size"></span>{" "}
                     <img
                       className="profile-icon"
                       src={post.Profile.image}

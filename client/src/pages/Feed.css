@@ -19,6 +19,8 @@
 .post-profile-info {
     text-align: left;
     height: 50px;
+    position: relative;
+    bottom: 15px;
 }
 
 .profile-icon {
@@ -28,6 +30,7 @@
     position: relative;
     top: 20px;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .post-info-container{

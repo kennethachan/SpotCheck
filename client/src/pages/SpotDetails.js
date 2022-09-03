@@ -49,7 +49,7 @@ function SpotDetails(props) {
           </p>
           <hr></hr>
           <p className="post-font-size">
-            <span className="bold">Submitted By:</span> {profile.userName}{" "}
+            <span className="bold"></span>{" "}
             <img
               className="profile-icon"
               src={profile.image}
@@ -57,6 +57,7 @@ function SpotDetails(props) {
                 navigate(`/get-profile/${profile.id}`)
               }}
             ></img>
+            {profile.userName}{" "}
           </p>
         </div>
       </div>

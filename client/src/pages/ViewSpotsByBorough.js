@@ -36,16 +36,19 @@ function ViewSpotsByBorough(props) {
           </p>
         </div>
         <div className="postbyborough-container">
-          {spots.map((spot) => (
-            <PostCard
-              key={spot.id}
-              onClick={() => {
-                navigate(`/spotdetails/${spot.id}`)
-              }}
-              image={spot.image}
-              name={spot.name}
-            />
-          ))}
+          {spots
+            .slice(0)
+            .reverse()
+            .map((spot) => (
+              <PostCard
+                key={spot.id}
+                onClick={() => {
+                  navigate(`/spotdetails/${spot.id}`)
+                }}
+                image={spot.image}
+                name={spot.name}
+              />
+            ))}
         </div>
       </div>
     </div>
