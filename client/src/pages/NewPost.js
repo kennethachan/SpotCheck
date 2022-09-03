@@ -2,6 +2,7 @@ import React from "react"
 import { useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react"
 import axios from "axios"
+import "./NewPost.css"
 
 const URL = "http://localhost:3001"
 
@@ -63,10 +64,11 @@ function NewPost({ profile }) {
 
   return (
     <div className="createProfileBody">
-      <form className="profile-form profileCreate" onSubmit={handleSubmit}>
-        <h1>Create Profile</h1>
+      <form className="new-post-form" onSubmit={handleSubmit}>
+        <h2>What Did You Find ?</h2>
         <div className="input-wrapper">
           <input
+            className="input"
             onChange={handleChange}
             name="name"
             type="text"
@@ -77,6 +79,7 @@ function NewPost({ profile }) {
         </div>
         <div className="input-wrapper">
           <input
+            className="input"
             onChange={handleChange}
             name="image"
             type="text"
@@ -87,15 +90,18 @@ function NewPost({ profile }) {
         </div>
         <div className="input-wrapper">
           <input
+            className="input"
+            onChange={handleChange}
             name="description"
             type="text"
             placeholder="Description"
             value={formValues.description}
-            readonly
+            required
           />
         </div>
         <div className="input-wrapper">
           <select
+            className="bustlevel"
             defaultValue={formValues.bustLevel}
             onChange={handleChange}
             name="bustLevel"
@@ -111,6 +117,7 @@ function NewPost({ profile }) {
         </div>
         <div className="input-wrapper">
           <select
+            className="bustlevel"
             defaultValue={formValues.boroughId}
             onChange={handleChange}
             name="boroughId"
@@ -126,7 +133,7 @@ function NewPost({ profile }) {
             ))}
           </select>
         </div>
-        <button className="" disabled={!formValues.name}>
+        <button className="new-post-btn" disabled={!formValues.name}>
           Post
         </button>
       </form>

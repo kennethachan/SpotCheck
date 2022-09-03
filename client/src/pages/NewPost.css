@@ -1,0 +1,37 @@
+.new-post-form {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background: #FAF9F6;
+    color: #1e2832;
+    padding: 30px;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 120px;
+}
+
+.new-post-btn {
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: #1e2832;
+    color: #FAF9F6;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.new-post-btn:hover {
+    background-color: #FAF9F6;
+    color:  #1e2832;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.bustlevel {
+    width: 143px;
+    margin-bottom: 20px;
+
+}

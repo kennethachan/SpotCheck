@@ -44,11 +44,3 @@
 .nav-icon:hover {
     transform: scale(1.4);
 }
-
-.new-post-btn {
-    height: 24px;
-    cursor: pointer;
-}
-.new-post-btn:hover {
-    transform: scale(1.3)
-}
