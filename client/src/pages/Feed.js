@@ -9,7 +9,6 @@ const URL = "http://localhost:3001"
 function Feed(props) {
   let navigate = useNavigate()
   const [posts, setPosts] = useState([])
-  const [profile, setProfile] = useState([])
 
   useEffect(() => {
     getPosts()
@@ -50,7 +49,7 @@ function Feed(props) {
                       className="profile-icon"
                       src={post.Profile.image}
                       onClick={() => {
-                        navigate(`/view-profile/${post.id}`)
+                        navigate(`/get-profile-from-feed/${post.Profile.id}`)
                       }}
                     ></img>
                     {post.Profile.userName}{" "}

@@ -14,6 +14,7 @@ import UpdateProfile from "./pages/UpdateProfile"
 import ViewSpotsByBorough from "./pages/ViewSpotsByBorough"
 import SpotDetails from "./pages/SpotDetails"
 import PostsByProfile from "./pages/PostsByProfile"
+import ViewProfileFromFeed from "./pages/ViewProfileFromFeed"
 
 const URL = "http://localhost:3001"
 
@@ -94,6 +95,10 @@ function App() {
           />
           <Route path="/spotdetails/:postId" element={<SpotDetails />} />
           <Route path="/get-profile/:profileId" element={<PostsByProfile />} />
+          <Route
+            path="/get-profile-from-feed/:profileId"
+            element={<ViewProfileFromFeed />}
+          />
           <Route
             path="/update-post"
             element={

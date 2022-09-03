@@ -33,6 +33,9 @@
     margin-right: auto;
 }
 
+.post-name {
+    font-weight: bold;
+}
 .postbyborough-img {
     width: 350px;
     height: 350px;
