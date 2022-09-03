@@ -40,7 +40,7 @@ function MyProfile({ profile, post }) {
           <h2>{user.userName}</h2>
           <div>
             <button className="profile-btn">Account</button>
-            <button className="profile-btn">New Post</button>
+            <button className="profile-btn">Update Post</button>
           </div>
         </div>
 
