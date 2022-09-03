@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react"
 import axios from "axios"
 import "./MyProfile.css"
-import PostsByProfileCard from "../components/PostsByProfileCard"
+import MyPostCard from "../components/MyPostCard"
 
 const URL = "http://localhost:3001"
 
@@ -55,12 +55,11 @@ function MyProfile({ profile, post }) {
           <h2 className="userName">{user.userName}</h2>
           <div>
             <button className="profile-btn">Account</button>
-            <button className="profile-btn">Update Post</button>
           </div>
         </div>
         <div>
           {spots.map((spot) => (
-            <PostsByProfileCard
+            <MyPostCard
               key={spot.id}
               image={spot.image}
               name={spot.name}

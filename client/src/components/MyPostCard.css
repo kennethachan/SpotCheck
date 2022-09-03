@@ -1,0 +1,17 @@
+.edit-icon {
+    height: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.edit-icon:hover {
+    transform: scale(1.2)
+}
+
+.delete-icon {
+    height: 20px;
+    cursor: pointer;
+}
+.delete-icon:hover {
+    transform: scale(1.2)
+}
