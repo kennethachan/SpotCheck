@@ -6,7 +6,8 @@ import "./Feed.css"
 
 const URL = "http://localhost:3001"
 
-function Feed(props) {
+function Feed(profile) {
+  console.log(profile)
   let navigate = useNavigate()
   const [posts, setPosts] = useState([])
 

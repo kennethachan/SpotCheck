@@ -19,7 +19,7 @@ const NavBar = ({ authenticated, profile, handleLogOut }) => {
             Profile
           </Link>
           <Link className="nav-link" to="/spots-by-borough">
-            Spots By Borough
+            Search
           </Link>
           <Link className="nav-link" onClick={handleLogOut} to="/">
             Sign Out

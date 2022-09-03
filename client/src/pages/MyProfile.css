@@ -1,0 +1,26 @@
+.profile-menu {
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+
+.profile-btn {
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: #FAF9F6;
+    color: #1e2832;
+    cursor: pointer;
+    border: none;
+}
+
+.profile-btn:hover {
+    background-color: #FAF9F6;
+    color:  #1e2832;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}

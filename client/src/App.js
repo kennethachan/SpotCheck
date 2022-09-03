@@ -73,7 +73,7 @@ function App() {
             }
           />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/feed" element={<Feed />} />
+          <Route path="/feed" element={<Feed profile={profile} />} />
           <Route
             path="/profile"
             element={

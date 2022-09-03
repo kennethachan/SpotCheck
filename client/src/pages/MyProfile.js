@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react"
 import axios from "axios"
+import "./MyProfile.css"
 
 const URL = "http://localhost:3001"
 
@@ -34,8 +35,15 @@ function MyProfile({ profile, post }) {
   if (spot === "undefined" || spot.length == 0) {
     return (
       <div>
-        <img className="profile-img" src={user.image}></img>
-        <h2>{user.userName}</h2>
+        <div className="profile-menu">
+          <img className="profile-img" src={user.image}></img>
+          <h2>{user.userName}</h2>
+          <div>
+            <button className="profile-btn">Account</button>
+            <button className="profile-btn">New Post</button>
+          </div>
+        </div>
+
         <h2>No Posts :(</h2>
       </div>
     )
