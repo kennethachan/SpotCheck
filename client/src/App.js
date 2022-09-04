@@ -112,7 +112,7 @@ function App() {
             }
           />
           <Route
-            path="/update-post"
+            path="/update-post/:postId"
             element={
               <UpdatePost
                 profile={profile}
