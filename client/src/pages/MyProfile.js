@@ -47,9 +47,7 @@ function MyProfile({ profile, post }) {
               onClick={() => navigate(`/update-profile/${profile.id}`)}
             ></img>
           </h2>
-          <div>
-            <button className="profile-btn">Account</button>
-          </div>
+          <div></div>
         </div>
         <h2 className="no-posts">No Posts :(</h2>
       </div>

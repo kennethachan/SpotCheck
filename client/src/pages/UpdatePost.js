@@ -107,7 +107,7 @@ function UpdatePost({ profile }) {
       boroughId: "",
     })
 
-    navigate("/feed")
+    navigate("/profile")
   }
 
   return (
