@@ -66,7 +66,7 @@ function NewPost({ profile }) {
   }
 
   return (
-    <div className="createProfileBody">
+    <div>
       <form className="new-post-form" onSubmit={handleSubmit}>
         <h2>What Did You Find ?</h2>
         <div className="input-wrapper">

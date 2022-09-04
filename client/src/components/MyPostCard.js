@@ -1,5 +1,4 @@
 import React from "react"
-import axios from "axios"
 import edit from "../assets/edit.png"
 import "./MyPostCard.css"
 import { useNavigate } from "react-router-dom"
@@ -11,7 +10,6 @@ function MyPostCard(props) {
 
   return (
     <div>
-      {" "}
       <div className="post-details-container">
         <div>
           <img className="spotdetail-image" src={props.image}></img>

@@ -1,0 +1,46 @@
+.update-post-form {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background: #FAF9F6;
+    color: #1e2832;
+    padding: 30px;
+    width: 300px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.delete-post-btn {
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    background-color: #c80202;
+    color: #FAF9F6;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.delete-post-btn:hover {
+    background-color: #FAF9F6;
+    color:  #c80202;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.bustlevel {
+    width: 143px;
+    margin-bottom: 20px;
+
+}
+
+.update-btns {
+    width: 225px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+}
