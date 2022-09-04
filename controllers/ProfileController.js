@@ -92,6 +92,7 @@ const GetProfileById = async (req, res) => {
         {
           model: Post,
           attributes: [
+            "id",
             "name",
             "image",
             "description",

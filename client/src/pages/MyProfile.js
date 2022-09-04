@@ -41,7 +41,6 @@ function MyProfile({ profile, post }) {
           <h2 className="userName">{user.userName}</h2>
           <div>
             <button className="profile-btn">Account</button>
-            <button className="profile-btn">Update Post</button>
           </div>
         </div>
         <h2 className="no-posts">No Posts :(</h2>
@@ -61,6 +60,7 @@ function MyProfile({ profile, post }) {
           {spots.map((spot) => (
             <MyPostCard
               key={spot.id}
+              id={spot.id}
               image={spot.image}
               name={spot.name}
               description={spot.description}
