@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 import axios from "axios"
 import "./MyProfile.css"
 import MyPostCard from "../components/MyPostCard"
+import edit from "../assets/white-edit.png"
 
 const URL = "http://localhost:3001"
 
@@ -38,7 +39,14 @@ function MyProfile({ profile, post }) {
       <div>
         <div className="profile-menu">
           <img className="profile-img" src={user.image}></img>
-          <h2 className="userName">{user.userName}</h2>
+          <h2 className="userName">
+            {user.userName}
+            <img
+              className="edit-profile-icon"
+              src={edit}
+              onClick={() => navigate(`/update-profile/${profile.id}`)}
+            ></img>
+          </h2>
           <div>
             <button className="profile-btn">Account</button>
           </div>
@@ -51,10 +59,15 @@ function MyProfile({ profile, post }) {
       <div>
         <div className="profile-menu">
           <img className="profile-img" src={user.image}></img>
-          <h2 className="userName">{user.userName}</h2>
-          <div>
-            <button className="profile-btn">Account</button>
-          </div>
+          <h2 className="userName">
+            {user.userName}{" "}
+            <img
+              className="edit-profile-icon"
+              src={edit}
+              onClick={() => navigate(`/update-profile/${profile.id}`)}
+            ></img>
+          </h2>
+          <div></div>
         </div>
         <div>
           {spots.map((spot) => (

@@ -123,7 +123,7 @@ function App() {
             }
           />
           <Route
-            path="/update-profile"
+            path="/update-profile/:profileId"
             element={
               <UpdateProfile
                 profile={profile}
