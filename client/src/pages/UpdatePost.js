@@ -105,18 +105,18 @@ function UpdatePost({ profile }) {
         <form className="update-post-form" onSubmit={handleSubmit}>
           <div className="input-wrapper">
             <input
-              className="input"
+              className="update-input"
               onChange={handleChange}
               name="name"
               type="text"
-              placeholder="Spot Name"
+              placeholder={spot.name}
               value={formValues.name}
               required
             />
           </div>
           <div className="input-wrapper">
             <input
-              className="input"
+              className="update-input"
               onChange={handleChange}
               name="image"
               type="text"
@@ -127,7 +127,7 @@ function UpdatePost({ profile }) {
           </div>
           <div className="input-wrapper">
             <input
-              className="input"
+              className="update-input"
               onChange={handleChange}
               name="description"
               type="text"
@@ -138,7 +138,7 @@ function UpdatePost({ profile }) {
           </div>
           <div className="input-wrapper">
             <input
-              className="input"
+              className="update-input"
               onChange={handleChange}
               name="address"
               type="text"
@@ -147,40 +147,44 @@ function UpdatePost({ profile }) {
               required
             />
           </div>
-          <div className="input-wrapper">
-            <select
-              className="bustlevel"
-              defaultValue={formValues.bustLevel}
-              onChange={handleChange}
-              name="bustLevel"
-              required
-            >
-              <option value="" disabled hidden>
-                Bust Level
-              </option>
-              <option value="Low">Low</option>
-              <option value="Medium">Medium</option>
-              <option value="High">High</option>
-            </select>
-          </div>
-          <div className="input-wrapper">
-            <select
-              className="bustlevel"
-              defaultValue={formValues.boroughId}
-              onChange={handleChange}
-              name="boroughId"
-              required
-            >
-              <option value="" disabled hidden>
-                Borough
-              </option>
-              {boroughs.map((borough) => (
-                <option key={borough.id} value={borough.id}>
-                  {borough.name}
+
+          <div className="dropdown-menus">
+            <div className="input-wrapper">
+              <select
+                className="bustlevel"
+                defaultValue={formValues.bustLevel}
+                onChange={handleChange}
+                name="bustLevel"
+                required
+              >
+                <option value="" disabled hidden>
+                  Bust Level
                 </option>
-              ))}
-            </select>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+              </select>
+            </div>
+            <div className="input-wrapper">
+              <select
+                className="bustlevel"
+                defaultValue={formValues.boroughId}
+                onChange={handleChange}
+                name="boroughId"
+                required
+              >
+                <option value="" disabled hidden>
+                  Borough
+                </option>
+                {boroughs.map((borough) => (
+                  <option key={borough.id} value={borough.id}>
+                    {borough.name}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
+
           <div className="update-btns">
             <button className="new-post-btn" disabled={!formValues.name}>
               Update
