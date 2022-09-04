@@ -4,7 +4,7 @@ import axios from "axios"
 import { useState } from "react"
 import { confirm } from "react-confirm-box"
 import { useEffect } from "react"
-import { useParams } from "react-router-dom"
+import "./UpdateProfile.css"
 
 const URL = "http://localhost:3001"
 
@@ -14,6 +14,7 @@ function UpdateProfile({ profile, handleLogOut }) {
   const [formValues, setFormValues] = useState({
     userName: "",
     image: "",
+    bio: "",
   })
 
   useEffect(() => {
@@ -49,6 +50,7 @@ function UpdateProfile({ profile, handleLogOut }) {
       .put(`${URL}/api/profiles/${profile.id}`, {
         userName: data.userName,
         image: data.image,
+        bio: data.bio,
       })
 
       .then((res) => {
@@ -66,6 +68,7 @@ function UpdateProfile({ profile, handleLogOut }) {
     let data = {
       userName: formValues.userName,
       image: formValues.image,
+      bio: formValues.bio,
     }
 
     updateProfile(data)
@@ -73,6 +76,7 @@ function UpdateProfile({ profile, handleLogOut }) {
     setFormValues({
       userName: "",
       image: "",
+      bio: "",
     })
 
     navigate("/profile")
@@ -80,9 +84,9 @@ function UpdateProfile({ profile, handleLogOut }) {
 
   return (
     <div>
-      <div className="post-details-container">
+      <div className="update-profile-container">
         <div>
-          <img className="spotdetail-image" src={profileInfo.image}></img>
+          <img className="profile-image" src={profileInfo.image}></img>
         </div>
         <form className="update-post-form" onSubmit={handleSubmit}>
           <div className="input-wrapper">
@@ -107,11 +111,22 @@ function UpdateProfile({ profile, handleLogOut }) {
               required
             />
           </div>
+          <div className="input-wrapper">
+            <textarea
+              className="update-input"
+              onChange={handleChange}
+              name="bio"
+              type="text"
+              placeholder="Bio"
+              value={formValues.bio}
+              required
+            />
+          </div>
 
           <div className="update-btns">
             <button className="new-post-btn">Update</button>
             <button className="delete-post-btn" onClick={deleteProfile}>
-              Delete
+              Delete Account
             </button>
           </div>
         </form>

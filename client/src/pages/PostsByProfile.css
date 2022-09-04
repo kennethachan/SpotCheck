@@ -3,6 +3,14 @@
 margin-top: 100px;
 }
 
+.bio {
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    font-size: 14px;
+}
+
 .userName {
     color: #FAF9F6;
     text-align: center;

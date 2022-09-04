@@ -47,7 +47,8 @@ function MyProfile({ profile, post }) {
               onClick={() => navigate(`/update-profile/${profile.id}`)}
             ></img>
           </h2>
-          <div></div>
+          <hr className="bio"></hr>
+          <p className="bio">{user.bio}</p>
         </div>
         <h2 className="no-posts">No Posts :(</h2>
       </div>
@@ -65,7 +66,8 @@ function MyProfile({ profile, post }) {
               onClick={() => navigate(`/update-profile/${profile.id}`)}
             ></img>
           </h2>
-          <div></div>
+          <hr className="bio"></hr>
+          <p className="bio">{user.bio}</p>
         </div>
         <div>
           {spots.map((spot) => (
