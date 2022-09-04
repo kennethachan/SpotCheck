@@ -60,6 +60,24 @@ function UpdatePost({ profile }) {
     }
   }
 
+  const updatePost = async (data) => {
+    const res = await axios
+      .put(`${URL}/api/posts/${postId}`, {
+        name: data.name,
+        image: data.image,
+        description: data.description,
+        address: data.address,
+        bustLevel: data.bustLevel,
+        profileId: data.profileId,
+        boroughId: data.boroughId,
+      })
+
+      .then((res) => {
+        console.log(res.data)
+      })
+      .catch((error) => console.log(error))
+  }
+
   const handleChange = (e) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value })
   }
@@ -77,11 +95,7 @@ function UpdatePost({ profile }) {
       boroughId: formValues.boroughId,
     }
 
-    const newPost = await axios
-      .post(`${URL}/api/posts/new-post`, data)
-      .then((res) => {
-        console.log(res.data)
-      })
+    updatePost(data)
 
     setFormValues({
       name: "",
@@ -120,7 +134,7 @@ function UpdatePost({ profile }) {
               onChange={handleChange}
               name="image"
               type="text"
-              placeholder="Image URL"
+              placeholder={spot.image}
               value={formValues.image}
               required
             />
@@ -131,7 +145,7 @@ function UpdatePost({ profile }) {
               onChange={handleChange}
               name="description"
               type="text"
-              placeholder="Description"
+              placeholder={spot.description}
               value={formValues.description}
               required
             />
@@ -142,7 +156,7 @@ function UpdatePost({ profile }) {
               onChange={handleChange}
               name="address"
               type="text"
-              placeholder="Address"
+              placeholder={spot.address}
               value={formValues.address}
               required
             />
