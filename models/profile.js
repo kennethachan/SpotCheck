@@ -33,6 +33,9 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.TEXT,
         allowNull: false,
       },
+      bio: {
+        type: DataTypes.TEXT,
+      },
     },
     {
       sequelize,
