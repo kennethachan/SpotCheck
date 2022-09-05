@@ -46,6 +46,7 @@ function PostsByProfile(props) {
         {spots.map((spot) => (
           <PostsByProfileCard
             key={spot.id}
+            id={spot.id}
             image={spot.image}
             name={spot.name}
             description={spot.description}
