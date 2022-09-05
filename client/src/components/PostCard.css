@@ -43,3 +43,28 @@
     position: relative;
     right: 25px;
 }
+
+@media only screen and (max-width:414px) {
+.postbyborough-wrapper {
+    width: 414px;
+}
+
+    .postbyborough-container {
+        width: 414px;
+        display: block;
+    }
+
+    .postbyborough-card {
+        width: 414px;
+    }
+
+    .postbyborough-img {
+        width: 414px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        position: relative;
+        right: 0px;
+    }
+
+
+}

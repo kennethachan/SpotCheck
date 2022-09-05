@@ -16,24 +16,6 @@
     text-decoration: underline;
 }
 
-.welcome {
-    display: inline-flex;
-    color: #FAF9F6;
-    font-weight: bold;
-    margin-right:30px;
-    position: relative;
-    top: 20px;
-}
-
-.welcome-mobile {
-    display: none;
-    color: #FAF9F6;
-    font-weight: bold;
-    margin-right:30px;
-    position: relative;
-    top: 20px;
-}
-
 .logo {
     color: #FAF9F6;
     margin-left: 20px;
@@ -76,19 +58,5 @@
         text-decoration: none;
         position: relative;
         margin-left: 0px;
-    }
-
-    .welcome {
-        display: none;
-    }
-
-    .welcome-mobile {
-        width: 414px;
-        display: block;
-        color: #FAF9F6;
-        font-weight: bold;
-        text-align: center;
-        position: relative;
-        top: 40px;
     }
 }

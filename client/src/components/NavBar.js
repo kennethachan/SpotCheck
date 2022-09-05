@@ -18,7 +18,6 @@ const NavBar = ({ authenticated, profile, handleLogOut }) => {
           </h1>
         </div>
         <nav className="navbar">
-          <p className="welcome">Welcome {profile.userName}!</p>
           <Link className="nav-link nav-icon" to="/new-post">
             <img className="nav-icon" src={plus}></img>
           </Link>
@@ -32,7 +31,6 @@ const NavBar = ({ authenticated, profile, handleLogOut }) => {
             Sign Out
           </Link>
         </nav>
-        <p className="welcome-mobile">Welcome {profile.userName}!</p>
       </div>
     )
   }

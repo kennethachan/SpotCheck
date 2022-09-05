@@ -73,7 +73,7 @@ font-size: 14px;
 @media only screen and (max-width:414px) {
     .post-container {
         width: 414px;
-        margin-top: 80px;
+        margin-top: 50px;
     }
     .post-info-container {
         border-radius: 0px;
