@@ -30,23 +30,8 @@ function Feed(props) {
           .map((post) => (
             <div className="post-card" key={post.id}>
               <div className="post-info-container">
-                <img className="post-img" src={post.image} alt="post-content" />
-                <h3 className="post-name">{post.name}</h3>
-                <div className="post-info">
-                  <p className="post-font-size">{post.description}</p>
-                  <p className="post-font-size">
-                    <span className="bold">Address:</span> {post.address}
-                  </p>
-                  <p className="post-font-size">
-                    <span className="bold">Bust Level: </span>
-                    {post.bustLevel}
-                  </p>
-                </div>
-
-                <hr></hr>
                 <div className="post-profile-info">
-                  <p className="post-font-size">
-                    <span className="bold post-font-size"></span>{" "}
+                  <p className="profile-name">
                     <img
                       className="profile-icon"
                       src={post.Profile.image}
@@ -55,6 +40,22 @@ function Feed(props) {
                       }}
                     ></img>
                     {post.Profile.userName}{" "}
+                  </p>
+                </div>
+                <img className="post-img" src={post.image} alt="post-content" />
+                <h3 className="post-name">{post.name}</h3>
+                <hr className="hr"></hr>
+                <div className="post-info">
+                  <p className="post-font-size">
+                    <span className="bold">{post.Profile.userName}:</span>
+                    {post.description}
+                  </p>
+                  <p className="post-font-size">
+                    <span className="bold">Address:</span> {post.address}
+                  </p>
+                  <p className="post-font-size">
+                    <span className="bold">Bust Level: </span>
+                    {post.bustLevel}
                   </p>
                 </div>
               </div>
