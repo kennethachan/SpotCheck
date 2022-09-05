@@ -25,6 +25,15 @@
     top: 20px;
 }
 
+.welcome-mobile {
+    display: none;
+    color: #FAF9F6;
+    font-weight: bold;
+    margin-right:30px;
+    position: relative;
+    top: 20px;
+}
+
 .logo {
     color: #FAF9F6;
     margin-left: 20px;
@@ -46,11 +55,21 @@
 }
 
 @media only screen and (max-width:414px) {
+
     .nav-container {
+        display: block;
         width: 414px;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
         text-align: center;
+    }
+
+    .navbar {
+        width: 414px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .nav-link {
+        margin-right: 0px;
     }
     .logo {
         color: #FAF9F6;
@@ -61,5 +80,15 @@
 
     .welcome {
         display: none;
+    }
+
+    .welcome-mobile {
+        width: 414px;
+        display: block;
+        color: #FAF9F6;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        top: 40px;
     }
 }

@@ -32,6 +32,7 @@ const NavBar = ({ authenticated, profile, handleLogOut }) => {
             Sign Out
           </Link>
         </nav>
+        <p className="welcome-mobile">Welcome {profile.userName}!</p>
       </div>
     )
   }
