@@ -1,3 +1,13 @@
+.back-to-spots {
+    color: #FAF9F6;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    top: 40px;
+}
+
 .post-details-container {
     width: 1000px;
     height: 400px;
@@ -39,13 +49,17 @@
 
     .post-details-container {
     width: 414px;
+    height: auto;
     display: block;
     color: black;
     border-radius: 0px;
+    margin-top: 70px;
+
 }
 .spotdetail-image {
     width: 414px;
     height: 414px;
+    object-fit: cover;
     border-radius: 0px;
 }
 

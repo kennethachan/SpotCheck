@@ -21,4 +21,8 @@
     width: 414px;
     display: block;
 }
+
+    .edit-icon {
+        margin-left: 10px;
+    }
 }

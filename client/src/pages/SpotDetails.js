@@ -28,7 +28,7 @@ function SpotDetails(props) {
   return (
     <div>
       <p
-        className="back-to-boroughs"
+        className="back-to-spots"
         onClick={() => navigate(`/get-posts/${spot.boroughId}`)}
       >
         Back To Spots

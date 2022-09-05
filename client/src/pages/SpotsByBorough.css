@@ -39,6 +39,7 @@
     .borough-container {
         width: 300px;
         display: block;
+        margin-top: 70px;
     }
 
     .borough-name {

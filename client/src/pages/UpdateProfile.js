@@ -85,7 +85,7 @@ function UpdateProfile({ profile, handleLogOut }) {
   return (
     <div>
       <div className="update-profile-container">
-        <div>
+        <div className="profile-image-container">
           <img className="profile-image" src={profileInfo.image}></img>
         </div>
         <form className="update-post-form" onSubmit={handleSubmit}>

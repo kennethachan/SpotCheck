@@ -19,3 +19,39 @@
     margin-left: 20px;
     margin-top: 20px;
 }
+
+@media only screen and (max-width:414px) {
+    .update-profile-container {
+        display: block;
+        width: 414px;
+        border-radius: 0px;
+        margin-top: 70px;
+    }
+
+    .profile-image-container {
+        width: 414px;
+      text-align: center;
+      background-color:#1e2832;
+    }
+
+    .profile-image {
+        width: 414px;
+        height: 414px;
+        object-fit: cover;
+        border-radius: 0px;
+
+        text-align:center;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .update-post-form {
+        width: 414px;
+        border-radius: 0px;
+        margin: 0px;
+        padding: 0px 0px 15px 0px;
+    }
+
+
+}

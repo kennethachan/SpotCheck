@@ -6,7 +6,7 @@ function PostCard(props) {
     <div>
       <div className="postbyborough-wrapper" onClick={props.onClick}>
         <div className="postbyborough-card">
-          <div className="post-info-container">
+          <div className="spot-info-container">
             <img className="postbyborough-img" src={props.image}></img>
             <p className="post-name">{props.name} </p>
           </div>

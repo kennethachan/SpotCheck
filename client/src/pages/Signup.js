@@ -103,7 +103,7 @@ function Signup(props) {
                 Sign Up
               </button>
               <div className="link-switch">
-                <Link className="signup-link" to="/">
+                <Link className="signin-link" to="/">
                   Already have an account?
                 </Link>
               </div>
