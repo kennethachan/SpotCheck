@@ -15,3 +15,10 @@
 .delete-icon:hover {
     transform: scale(1.2)
 }
+
+@media only screen and (max-width:414px) {
+    .post-details-container {
+    width: 414px;
+    display: block;
+}
+}

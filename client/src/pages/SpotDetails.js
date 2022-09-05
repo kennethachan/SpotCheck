@@ -35,12 +35,26 @@ function SpotDetails(props) {
       </p>
       <div className="post-details-container">
         <div>
+          <p className="spot-details-profile-name-mobile">
+            <span className="bold"></span>{" "}
+            <img
+              className="profile-icon"
+              src={profile.image}
+              onClick={() => {
+                navigate(`/get-profile/${profile.id}`)
+              }}
+            ></img>
+            {profile.userName}{" "}
+          </p>
           <img className="spotdetail-image" src={spot.image}></img>
         </div>
         <div className="spotdetail-info">
           <h3 className="spotdetail-name">{spot.name}</h3>
           <hr></hr>
-          <p className="post-font-size">{spot.description}</p>
+          <p className="post-font-size">
+            <span className="bold">{profile.userName}: </span>
+            {spot.description}
+          </p>
           <p className="post-font-size">
             <span className="bold">Address: </span>
             {spot.address}
