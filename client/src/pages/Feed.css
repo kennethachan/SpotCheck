@@ -65,3 +65,41 @@ font-size: 14px;
 .bold {
     font-weight: bold;
 }
+
+@media only screen and (max-width:414px) {
+    .post-container {
+        width: 414px;
+    }
+    .post-info-container {
+        border-radius: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .post-card {
+        width: 414px;
+    }
+
+    .post-img {
+        width: 414px;
+        height: 400px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        position: relative;
+        right: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .post-info {
+        width: 350px;
+        text-align: left;
+        color: black;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .post-profile-info {
+     padding: 0px 15px 20px 20px;
+
+    }
+}

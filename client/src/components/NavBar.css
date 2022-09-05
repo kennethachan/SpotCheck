@@ -44,3 +44,22 @@
 .nav-icon:hover {
     transform: scale(1.4);
 }
+
+@media only screen and (max-width:414px) {
+    .nav-container {
+        width: 414px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+    .logo {
+        color: #FAF9F6;
+        text-decoration: none;
+        position: relative;
+        margin-left: 0px;
+    }
+
+    .welcome {
+        display: none;
+    }
+}

@@ -8,3 +8,12 @@ html {
 }
 
 
+@media only screen and (max-width:414px) {
+    .App{
+        width: 414px;
+    }
+    html{
+        width: 414px;
+    }
+
+}

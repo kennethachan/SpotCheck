@@ -32,7 +32,6 @@ function Feed(props) {
               <div className="post-info-container">
                 <img className="post-img" src={post.image} alt="post-content" />
                 <h3 className="post-name">{post.name}</h3>
-
                 <div className="post-info">
                   <p className="post-font-size">{post.description}</p>
                   <p className="post-font-size">
@@ -43,6 +42,7 @@ function Feed(props) {
                     {post.bustLevel}
                   </p>
                 </div>
+
                 <hr></hr>
                 <div className="post-profile-info">
                   <p className="post-font-size">

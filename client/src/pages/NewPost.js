@@ -71,7 +71,7 @@ function NewPost({ profile }) {
         <h2>What Did You Find ?</h2>
         <div className="input-wrapper">
           <input
-            className="input"
+            className="new-post-input"
             onChange={handleChange}
             name="name"
             type="text"
@@ -82,7 +82,7 @@ function NewPost({ profile }) {
         </div>
         <div className="input-wrapper">
           <input
-            className="input"
+            className="new-post-input"
             onChange={handleChange}
             name="image"
             type="text"
@@ -93,7 +93,7 @@ function NewPost({ profile }) {
         </div>
         <div className="input-wrapper">
           <input
-            className="input"
+            className="new-post-input"
             onChange={handleChange}
             name="description"
             type="text"
@@ -104,7 +104,7 @@ function NewPost({ profile }) {
         </div>
         <div className="input-wrapper">
           <input
-            className="input"
+            className="new-post-input"
             onChange={handleChange}
             name="address"
             type="text"
@@ -113,40 +113,43 @@ function NewPost({ profile }) {
             required
           />
         </div>
-        <div className="input-wrapper">
-          <select
-            className="bustlevel"
-            defaultValue={formValues.bustLevel}
-            onChange={handleChange}
-            name="bustLevel"
-            required
-          >
-            <option value="" disabled hidden>
-              Bust Level
-            </option>
-            <option value="Low">Low</option>
-            <option value="Medium">Medium</option>
-            <option value="High">High</option>
-          </select>
-        </div>
-        <div className="input-wrapper">
-          <select
-            className="bustlevel"
-            defaultValue={formValues.boroughId}
-            onChange={handleChange}
-            name="boroughId"
-            required
-          >
-            <option value="" disabled hidden>
-              Borough
-            </option>
-            {boroughs.map((borough) => (
-              <option key={borough.id} value={borough.id}>
-                {borough.name}
+        <div className="newpost-dropdown-menus">
+          <div className="input-wrapper">
+            <select
+              className="bustlevel"
+              defaultValue={formValues.bustLevel}
+              onChange={handleChange}
+              name="bustLevel"
+              required
+            >
+              <option value="" disabled hidden>
+                Bust Level
               </option>
-            ))}
-          </select>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+          <div className="input-wrapper">
+            <select
+              className="bustlevel"
+              defaultValue={formValues.boroughId}
+              onChange={handleChange}
+              name="boroughId"
+              required
+            >
+              <option value="" disabled hidden>
+                Borough
+              </option>
+              {boroughs.map((borough) => (
+                <option key={borough.id} value={borough.id}>
+                  {borough.name}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
+
         <button className="new-post-btn" disabled={!formValues.name}>
           Post
         </button>
