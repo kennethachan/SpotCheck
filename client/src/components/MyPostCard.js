@@ -10,7 +10,7 @@ function MyPostCard(props) {
 
   return (
     <div>
-      <div className="post-details-container">
+      <div className="post-details-container post-font-size">
         <div>
           <img className="spotdetail-image" src={props.image}></img>
         </div>

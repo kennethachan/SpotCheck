@@ -35,7 +35,6 @@ function SpotsByBorough(props) {
 
   return (
     <div>
-      {/* <h2 className="borough-title">The NYC Boroughs</h2> */}
       <div className="borough-container">
         <div className="borough-card">
           <img

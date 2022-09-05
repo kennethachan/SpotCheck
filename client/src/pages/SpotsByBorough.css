@@ -35,3 +35,13 @@
     font-weight: bold;
 }
 
+@media only screen and (max-width:414px) {
+    .borough-container {
+        width: 300px;
+        display: block;
+    }
+
+    .borough-name {
+        padding-bottom: 15px;
+    }
+}
