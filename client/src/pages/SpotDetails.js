@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import { useParams, useNavigate } from "react-router-dom"
 import axios from "axios"
 import "./SpotDetails.css"
+import Directions from "../components/Directions"
 
 const URL = "http://localhost:3001"
 
@@ -71,6 +72,9 @@ function SpotDetails(props) {
             {profile.userName}{" "}
           </p>
         </div>
+      </div>
+      <div>
+        <Directions />
       </div>
     </div>
   )
