@@ -54,7 +54,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
         <NavBar
           profile={profile}
