@@ -34,7 +34,7 @@
     border-radius: 20px;
     width: 100px;
     height: 40px;
-    background-color: black;
+    background-color: green;
     border: none;
     color: #FAF9F6;
     cursor: pointer;
@@ -43,7 +43,7 @@
 
 .new-post-btn:hover {
     background-color: #FAF9F6;
-    color:  black;
+    color:  green;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 

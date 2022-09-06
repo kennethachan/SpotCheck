@@ -69,7 +69,17 @@ border-top-left-radius: 20px;
 }
 
 @media only screen and (max-width:414px) {
-    .signup-form {
-    margin-top: 100px;
+    .signup-wrapper {
+        width: 320px;
+        display: block;
     }
+
+    .signup-img {
+        display: none;
+    }
+
+    .input {
+        width: 250px;
+    }
+
 }
