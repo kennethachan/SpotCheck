@@ -117,22 +117,6 @@ function NewPost({ profile }) {
           <div className="input-wrapper">
             <select
               className="bustlevel"
-              defaultValue={formValues.bustLevel}
-              onChange={handleChange}
-              name="bustLevel"
-              required
-            >
-              <option value="" disabled hidden>
-                Bust Level
-              </option>
-              <option value="Low">Low</option>
-              <option value="Medium">Medium</option>
-              <option value="High">High</option>
-            </select>
-          </div>
-          <div className="input-wrapper">
-            <select
-              className="bustlevel"
               defaultValue={formValues.boroughId}
               onChange={handleChange}
               name="boroughId"
@@ -148,8 +132,23 @@ function NewPost({ profile }) {
               ))}
             </select>
           </div>
+          <div className="input-wrapper">
+            <select
+              className="bustlevel"
+              defaultValue={formValues.bustLevel}
+              onChange={handleChange}
+              name="bustLevel"
+              required
+            >
+              <option value="" disabled hidden>
+                Bust Level
+              </option>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </div>
         </div>
-
         <button className="new-post-btn" disabled={!formValues.name}>
           Post
         </button>

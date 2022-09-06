@@ -51,19 +51,20 @@
     font-size: 15px;
     font-weight: bold;
     border-radius: 20px;
-    border: none;
+    border: 1px solid #05ae75;
     margin-bottom: 20px;
     width: 100px;
     height: 40px;
-    background-color: green;
-    color: #FAF9F6;
+    background-color: #05ae75;
+    /* background-color: green; */
+    color: white;
     cursor: pointer;
 }
 
 .signin-btn:hover {
+    border: 1px solid #05ae75;
     background-color: #FAF9F6;
-    color:  green;
-    border: none;
+    color:  #05ae75;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 

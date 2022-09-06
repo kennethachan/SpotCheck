@@ -1,8 +1,8 @@
 .update-profile-container {
-    width: 800px;
+    width: 600px;
     height: 340px;
     border-radius: 10px;
-    background-color: #FAF9F6;
+    background-color: #1e2832;
     display: flex;
     justify-content: space-between;
     margin-right: auto;
@@ -11,12 +11,37 @@
     margin-bottom: 100px;
 }
 
+.update-profile-form {
+    width: 300px;
+    height: 280px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background: #FAF9F6;
+    color: #1e2832;
+    padding: 30px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 .profile-image {
     height: 340px;
     width: 300px;
     object-fit:cover;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+}
+
+.update-profile-btns {
+    width: 225px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    position: relative;
+    top: 20px;
 }
 
 @media only screen and (max-width:414px) {
@@ -41,12 +66,17 @@
         margin: 0px;
     }
 
-    .update-post-form {
+    .update-profile-form {
         width: 414px;
         border-radius: 0px;
         margin: 0px;
         padding: 0px 0px 15px 0px;
+        position: relative;
+        bottom: 3px;
     }
 
-
+    .update-profile-btns {
+        position: relative;
+        top: 30px;
+    }
 }

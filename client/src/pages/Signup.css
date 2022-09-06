@@ -49,7 +49,7 @@ border-top-left-radius: 20px;
     margin-bottom: 20px;
     width: 100px;
     height: 40px;
-    background-color:  green;
+    background-color:  #05ae75;
     border: none;
     color: #FAF9F6;
     cursor: pointer;
@@ -57,8 +57,8 @@ border-top-left-radius: 20px;
 
 .signup-btn:hover {
     background-color: #FAF9F6;
-    color:  green;
-    border: none;
+    color:  #05ae75;
+    border: 1px solid #05ae75;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 

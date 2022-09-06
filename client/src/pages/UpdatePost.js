@@ -166,22 +166,6 @@ function UpdatePost({ profile }) {
             <div className="input-wrapper">
               <select
                 className="bustlevel"
-                defaultValue={formValues.bustLevel}
-                onChange={handleChange}
-                name="bustLevel"
-                required
-              >
-                <option value="" disabled hidden>
-                  Bust Level
-                </option>
-                <option value="Low">Low</option>
-                <option value="Medium">Medium</option>
-                <option value="High">High</option>
-              </select>
-            </div>
-            <div className="input-wrapper">
-              <select
-                className="bustlevel"
                 defaultValue={formValues.boroughId}
                 onChange={handleChange}
                 name="boroughId"
@@ -197,9 +181,24 @@ function UpdatePost({ profile }) {
                 ))}
               </select>
             </div>
+            <div className="input-wrapper">
+              <select
+                className="bustlevel"
+                defaultValue={formValues.bustLevel}
+                onChange={handleChange}
+                name="bustLevel"
+                required
+              >
+                <option value="" disabled hidden>
+                  Bust Level
+                </option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+              </select>
+            </div>
           </div>
-
-          <div className="update-btns">
+          <div className="update-post-btns">
             <button className="new-post-btn" disabled={!formValues.name}>
               Update
             </button>

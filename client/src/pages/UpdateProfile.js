@@ -87,7 +87,7 @@ function UpdateProfile({ profile, handleLogOut }) {
         <div className="profile-image-container">
           <img className="profile-image" src={profileInfo.image}></img>
         </div>
-        <form className="update-post-form" onSubmit={handleSubmit}>
+        <form className="update-profile-form" onSubmit={handleSubmit}>
           <div className="input-wrapper">
             <input
               className="update-input"
@@ -122,10 +122,10 @@ function UpdateProfile({ profile, handleLogOut }) {
             />
           </div>
 
-          <div className="update-btns">
+          <div className="update-profile-btns">
             <button className="new-post-btn">Update</button>
             <button className="delete-post-btn" onClick={deleteProfile}>
-              Delete Account
+              Delete
             </button>
           </div>
         </form>
