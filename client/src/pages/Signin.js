@@ -1,7 +1,6 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
 import { SignInUser } from "../services/Auth"
 import "./Signin.css"
 import pipegap from "../assets/pipe-gap.jpeg"
@@ -24,9 +23,7 @@ function Signin(props) {
   }
   return (
     <div className="signin-wrapper">
-      <div className="signin-img-container">
-        <img className="signin-img" src={pipegap}></img>
-      </div>
+      <img className="signin-img" src={pipegap}></img>
       <div className="signin-container">
         <form className="signin-form" onSubmit={handleSubmit}>
           <h2 className="signin">Sign In</h2>

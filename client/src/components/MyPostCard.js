@@ -2,9 +2,8 @@ import React from "react"
 import edit from "../assets/edit.png"
 import "./MyPostCard.css"
 import { useNavigate } from "react-router-dom"
+import { useState, useEffect } from "react"
 import axios from "axios"
-import { useState } from "react"
-import { useEffect } from "react"
 
 const URL = "http://localhost:3001"
 

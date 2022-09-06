@@ -1,9 +1,6 @@
 import React from "react"
-import { useState } from "react"
-import { useEffect } from "react"
-import { useParams } from "react-router-dom"
-import { useNavigate } from "react-router-dom"
-import { Link } from "react-router-dom"
+import { useState, useEffect } from "react"
+import { useParams, Link } from "react-router-dom"
 import axios from "axios"
 import PostsByProfileCard from "../components/PostsByProfileCard"
 import "./PostsByProfile.css"
@@ -15,7 +12,6 @@ function PostsByProfile(props) {
   const [profile, setProfile] = useState([])
 
   let { profileId } = useParams()
-  let navigate = useNavigate()
 
   useEffect(() => {
     getSpotsByProfile()

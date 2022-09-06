@@ -27,7 +27,9 @@
 }
 
 .spotdetail-image {
+    width: 600px;
     height: 400px;
+    object-fit: cover;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }

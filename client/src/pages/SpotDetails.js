@@ -1,9 +1,6 @@
 import React from "react"
-import { useState } from "react"
-import { useEffect } from "react"
-import { useParams } from "react-router-dom"
-import { Link } from "react-router-dom"
-import { useNavigate } from "react-router-dom"
+import { useState, useEffect } from "react"
+import { useParams, useNavigate } from "react-router-dom"
 import axios from "axios"
 import "./SpotDetails.css"
 

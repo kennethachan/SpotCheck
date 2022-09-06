@@ -2,7 +2,6 @@ html {
     background-color:#1e2832;
 }
 
-
 @media only screen and (max-width:414px) {
     .App{
         width: 414px;

@@ -1,13 +1,13 @@
 import React from "react"
 import { useEffect, useState } from "react"
-import axios from "axios"
 import { useNavigate } from "react-router-dom"
+import axios from "axios"
+import "./SpotsByBorough.css"
 import blubba from "../assets/blubba.jpeg"
 import ps6 from "../assets/ps6.jpeg"
 import ogden from "../assets/ogden.jpeg"
 import mambo from "../assets/mambo.jpeg"
 import flushing from "../assets/flushing.jpeg"
-import "./SpotsByBorough.css"
 
 const URL = "http://localhost:3001"
 
@@ -42,12 +42,7 @@ function SpotsByBorough(props) {
             onClick={() => navigate(`/get-posts/${manhattan.id}`)}
             src={blubba}
           ></img>
-          <p
-            className="borough-name
-          "
-          >
-            {manhattan.name}
-          </p>
+          <p className="borough-name">{manhattan.name}</p>
         </div>
         <div className="borough-card">
           <img
@@ -55,12 +50,7 @@ function SpotsByBorough(props) {
             onClick={() => navigate(`/get-posts/${statenIsland.id}`)}
             src={ps6}
           ></img>
-          <p
-            className="borough-name
-          "
-          >
-            {statenIsland.name}
-          </p>
+          <p className="borough-name">{statenIsland.name}</p>
         </div>
         <div className="borough-card">
           <img
@@ -68,12 +58,7 @@ function SpotsByBorough(props) {
             onClick={() => navigate(`/get-posts/${bronx.id}`)}
             src={ogden}
           ></img>
-          <p
-            className="borough-name
-          "
-          >
-            {bronx.name}
-          </p>
+          <p className="borough-name">{bronx.name}</p>
         </div>
         <div className="borough-card">
           <img
@@ -81,12 +66,7 @@ function SpotsByBorough(props) {
             onClick={() => navigate(`/get-posts/${brooklyn.id}`)}
             src={mambo}
           ></img>
-          <p
-            className="borough-name
-          "
-          >
-            {brooklyn.name}
-          </p>
+          <p className="borough-name">{brooklyn.name}</p>
         </div>
         <div className="borough-card">
           <img
@@ -94,12 +74,7 @@ function SpotsByBorough(props) {
             onClick={() => navigate(`/get-posts/${queens.id}`)}
             src={flushing}
           ></img>
-          <p
-            className="borough-name
-          "
-          >
-            {queens.name}
-          </p>
+          <p className="borough-name">{queens.name}</p>
         </div>
       </div>
     </div>

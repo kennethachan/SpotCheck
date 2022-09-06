@@ -1,9 +1,6 @@
 import React from "react"
-import { useState } from "react"
-import { useEffect } from "react"
-import { useParams } from "react-router-dom"
-import { useNavigate } from "react-router-dom"
-import { Link } from "react-router-dom"
+import { useState, useEffect } from "react"
+import { useParams, useNavigate, Link } from "react-router-dom"
 import axios from "axios"
 import PostsByProfileCard from "../components/PostsByProfileCard"
 import "./PostsByProfile.css"
@@ -32,7 +29,6 @@ function ViewProfileFromFeed(props) {
     <div>
       <p className="back-to-boroughs">
         <Link className="back-to-boroughs" to="/feed">
-          {" "}
           Back To Feed
         </Link>
       </p>

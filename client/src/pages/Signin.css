@@ -12,13 +12,13 @@
 }
 
 .signin-img {
-width: 500px;
-border-bottom-left-radius: 20px;
-border-top-left-radius: 20px;
+    width: 500px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 .signin-container {
-text-align: center;
+    text-align: center;
 }
 
 .signin {

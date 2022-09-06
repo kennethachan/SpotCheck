@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react"
 import axios from "axios"
@@ -9,11 +8,8 @@ import edit from "../assets/white-edit.png"
 
 const URL = "http://localhost:3001"
 
-function MyProfile({ profile, post }) {
-  console.log(profile)
-  console.log(post)
+function MyProfile({ profile }) {
   let navigate = useNavigate()
-
   const [user, setUser] = useState([])
   const [spots, setSpots] = useState([])
 

@@ -12,12 +12,11 @@
 }
 
 .profile-image {
-    height: 300px;
+    height: 340px;
     width: 300px;
     object-fit:cover;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-top: 20px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 @media only screen and (max-width:414px) {
@@ -30,8 +29,8 @@
 
     .profile-image-container {
         width: 414px;
-      text-align: center;
-      background-color:#1e2832;
+        text-align: center;
+        background-color:#1e2832;
     }
 
     .profile-image {
@@ -39,11 +38,7 @@
         height: 414px;
         object-fit: cover;
         border-radius: 0px;
-
-        text-align:center;
         margin: 0px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .update-post-form {
