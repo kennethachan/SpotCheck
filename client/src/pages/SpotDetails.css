@@ -80,6 +80,15 @@
     margin-top: 70px;
 }
 
+.post-details-container {
+    width: 414px;
+    height: auto;
+    display: block;
+    color: black;
+    border-radius: 0px;
+    margin-top: 70px;
+}
+
 .post-info-wrapper{
     height: 700px;
     background-color: #FAF9F6;
@@ -90,6 +99,13 @@
 }
 
 .post-img {
+    width: 414px;
+    height: 414px;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+.spotdetail-image {
     width: 414px;
     height: 414px;
     object-fit: cover;
