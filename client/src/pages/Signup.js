@@ -49,7 +49,7 @@ function Signup(props) {
       </div>
 
       <form className="signup-form" onSubmit={handleSubmit}>
-        <h1>Sign Up</h1>
+        <h2 className="signup">Sign Up</h2>
         <div className="input-wrapper">
           <input
             className="input"

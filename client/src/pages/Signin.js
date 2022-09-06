@@ -29,7 +29,7 @@ function Signin(props) {
       </div>
       <div className="signin-container">
         <form className="signin-form" onSubmit={handleSubmit}>
-          <h1>Sign In</h1>
+          <h2 className="signin">Sign In</h2>
           <div className="input-wrapper">
             <input
               className="input"

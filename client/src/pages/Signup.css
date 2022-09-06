@@ -29,6 +29,11 @@ border-top-left-radius: 20px;
     color: black;
 }
 
+.signup {
+    margin-top:20px;
+    margin-bottom: 40px;
+}
+
 .input {
     border: none;
     background: transparent;
