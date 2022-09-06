@@ -1,9 +1,16 @@
 .map-container {
-    width: 1000px;
-    height: 725px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    border-radius: 10px;
-    position: relative;
+  width: 600px;
+  height: 726px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  position: relative;
+  top: 14px;
   }
+  
+@media only screen and (max-width:414px) {
+  .map-container {
+    width: 414px;
+    border-radius: 0px;
+  }
+}

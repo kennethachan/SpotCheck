@@ -31,50 +31,56 @@ function SpotDetails(props) {
       >
         Back To Spots
       </p>
-      <div className="post-details-container">
+      <div className="spot-details-container">
+        <div className="post-card">
+          <div className="post-info-wrapper">
+            <div className="post-profile-info">
+              <p className="profile-name">
+                <span className="bold"></span>{" "}
+                <img
+                  className="profile-icon"
+                  src={profile.image}
+                  onClick={() => {
+                    navigate(`/get-profile/${profile.id}`)
+                  }}
+                ></img>
+                {profile.userName}{" "}
+              </p>
+              <p className="spot-details-profile-name-mobile">
+                <span className="bold"></span>{" "}
+                <img
+                  className="profile-icon"
+                  src={profile.image}
+                  onClick={() => {
+                    navigate(`/get-profile/${profile.id}`)
+                  }}
+                ></img>
+                {profile.userName}{" "}
+              </p>
+            </div>
+            <img className="post-img" src={spot.image}></img>
+
+            <div className="post-info">
+              <h3 className="post-name">{spot.name}</h3>
+              <hr className="hr"></hr>
+              <p className="post-font-size">
+                <span className="bold">{profile.userName}: </span>
+                {spot.description}
+              </p>
+              <p className="post-font-size">
+                <span className="bold">Address: </span>
+                {spot.address}
+              </p>
+              <p className="post-font-size">
+                <span className="bold">BustLevel:</span> {spot.bustLevel}
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div>
-          <p className="spot-details-profile-name-mobile">
-            <span className="bold"></span>{" "}
-            <img
-              className="profile-icon"
-              src={profile.image}
-              onClick={() => {
-                navigate(`/get-profile/${profile.id}`)
-              }}
-            ></img>
-            {profile.userName}{" "}
-          </p>
-          <img className="spotdetail-image" src={spot.image}></img>
+          <Directions />
         </div>
-        <div className="spotdetail-info">
-          <h3 className="spotdetail-name">{spot.name}</h3>
-          <hr></hr>
-          <p className="post-font-size">
-            <span className="bold">{profile.userName}: </span>
-            {spot.description}
-          </p>
-          <p className="post-font-size">
-            <span className="bold">Address: </span>
-            {spot.address}
-          </p>
-          <p className="post-font-size">
-            <span className="bold">BustLevel:</span> {spot.bustLevel}
-          </p>
-          <p className="spot-details-profile-name">
-            <span className="bold"></span>{" "}
-            <img
-              className="profile-icon"
-              src={profile.image}
-              onClick={() => {
-                navigate(`/get-profile/${profile.id}`)
-              }}
-            ></img>
-            {profile.userName}{" "}
-          </p>
-        </div>
-      </div>
-      <div>
-        <Directions />
       </div>
     </div>
   )

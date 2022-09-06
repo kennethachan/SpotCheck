@@ -18,6 +18,7 @@ export default function Directions() {
       center: [-73.985664, 40.748514],
       zoom: 12,
     })
+
     const directions = new MapboxDirections({
       accessToken: mapboxgl.accessToken,
       unit: "imperial",
