@@ -8,6 +8,10 @@
     top: 40px;
 }
 
+.back-to-spots:hover {
+    text-decoration: underline;
+}
+
 .spot-details-container {
     width: 1020px;
     height: 726px;
@@ -67,6 +71,27 @@
 
 .spotdetail-name {
     text-align: center;
+}
+
+.directions-title {
+    font-size: 16px;
+    text-align: center;
+}
+
+.directions-title-container {
+    font-size: 16px;
+    width: 1000px;
+    background-color: #FAF9F6;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 1px;
+}
+
+.directions-line {
+    width: 900px;
 }
 
 @media only screen and (max-width:414px) {
@@ -138,5 +163,16 @@
     position: relative;
     bottom: 10px;
     left: 10px;
+}
+
+.directions-title-container {
+    width: 414px;
+    border-radius: 0px;
+    padding-top: 15px;
+    position: relative;
+}
+
+.directions-line {
+    width: 375px;
 }
 }
