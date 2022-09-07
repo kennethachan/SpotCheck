@@ -42,7 +42,7 @@ function Feed(props) {
                   </p>
                 </div>
                 <img className="post-img" src={post.image} alt="post-content" />
-                <h3 className="post-name">{post.name}</h3>
+                <h3 className="post-feed-name">{post.name}</h3>
                 <hr className="hr"></hr>
                 <div className="post-info">
                   <p className="post-font-size">

@@ -88,13 +88,14 @@ function UpdateProfile({ profile, handleLogOut }) {
           <img className="profile-image" src={profileInfo.image}></img>
         </div>
         <form className="update-profile-form" onSubmit={handleSubmit}>
+          <h3 className="update-profile-title">Update Your Profile!</h3>
           <div className="input-wrapper">
             <input
               className="update-input"
               onChange={handleChange}
               name="userName"
               type="text"
-              placeholder={profileInfo.userName}
+              placeholder={"Username"}
               value={formValues.userName}
               required
             />
@@ -105,25 +106,25 @@ function UpdateProfile({ profile, handleLogOut }) {
               onChange={handleChange}
               name="image"
               type="text"
-              placeholder={profileInfo.image}
+              placeholder={"Profile Image URL"}
               value={formValues.image}
               required
             />
           </div>
           <div className="input-wrapper">
-            <textarea
+            <input
               className="update-input"
               onChange={handleChange}
               name="bio"
               type="text"
-              placeholder="Bio"
+              placeholder="What Do You Have To Say?!"
               value={formValues.bio}
               required
             />
           </div>
 
           <div className="update-profile-btns">
-            <button className="new-post-btn">Update</button>
+            <button className="update-btn">Update</button>
             <button className="delete-post-btn" onClick={deleteProfile}>
               Delete
             </button>

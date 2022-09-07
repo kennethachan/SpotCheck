@@ -117,13 +117,14 @@ function UpdatePost({ profile }) {
           <img className="spotdetail-image" src={spot.image}></img>
         </div>
         <form className="update-post-form" onSubmit={handleSubmit}>
+          <h3 className="update-post-title">Update Your Post!</h3>
           <div className="input-wrapper">
             <input
               className="update-input"
               onChange={handleChange}
               name="name"
               type="text"
-              placeholder={spot.name}
+              placeholder="Spot Name"
               value={formValues.name}
               required
             />
@@ -134,7 +135,7 @@ function UpdatePost({ profile }) {
               onChange={handleChange}
               name="image"
               type="text"
-              placeholder={spot.image}
+              placeholder="Image URL"
               value={formValues.image}
               required
             />
@@ -145,7 +146,7 @@ function UpdatePost({ profile }) {
               onChange={handleChange}
               name="description"
               type="text"
-              placeholder={spot.description}
+              placeholder="Description"
               value={formValues.description}
               required
             />
@@ -156,7 +157,7 @@ function UpdatePost({ profile }) {
               onChange={handleChange}
               name="address"
               type="text"
-              placeholder={spot.address}
+              placeholder="Address"
               value={formValues.address}
               required
             />
@@ -199,7 +200,7 @@ function UpdatePost({ profile }) {
             </div>
           </div>
           <div className="update-post-btns">
-            <button className="new-post-btn" disabled={!formValues.name}>
+            <button className="update-btn" disabled={!formValues.name}>
               Update
             </button>
             <button className="delete-post-btn" onClick={deletePost}>

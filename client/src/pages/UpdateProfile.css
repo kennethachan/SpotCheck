@@ -25,6 +25,10 @@
     border-top-right-radius: 10px;
 }
 
+.update-profile-title {
+    margin-bottom: 50px;
+}
+
 .profile-image {
     height: 340px;
     width: 300px;
@@ -34,14 +38,34 @@
 }
 
 .update-profile-btns {
-    width: 225px;
+    width: 250px;
     display: flex;
     justify-content: space-between;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 10px;
     position: relative;
-    top: 20px;
+    bottom: 10px;
+}
+
+.update-btn {
+    width: 100px;
+    height: 40px;
+    color: #FAF9F6;
+    background-color: black;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.update-btn:hover {
+    background-color: #FAF9F6;
+    color:  black;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 @media only screen and (max-width:414px) {
@@ -50,6 +74,11 @@
         width: 414px;
         border-radius: 0px;
         margin-top: 70px;
+    }
+
+    .update-profile-title {
+        padding-top: 20px;
+        margin-bottom: 10px;
     }
 
     .profile-image-container {
@@ -72,11 +101,11 @@
         margin: 0px;
         padding: 0px 0px 15px 0px;
         position: relative;
-        bottom: 3px;
+        bottom: 22px;
     }
 
     .update-profile-btns {
         position: relative;
-        top: 30px;
+        top: 20px;
     }
 }

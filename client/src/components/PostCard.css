@@ -60,6 +60,11 @@
 
 @media only screen and (max-width:414px) {
 
+    .post-name {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
     .back-to-boroughs {
         margin-top: -10px;
     }

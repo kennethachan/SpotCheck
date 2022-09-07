@@ -5,10 +5,14 @@
     text-align: center;
     background: #FAF9F6;
     color: #1e2832;
-    padding: 30px;
+    padding: 0px 30px 0px 30px;
     width: 300px;
     border-radius: 20px;
     margin-top: 10px;
+}
+
+.update-post-title {
+    margin-bottom: 50px;
 }
 
 .dropdown-menus {
@@ -52,14 +56,14 @@
 }
 
 .update-post-btns {
-    width: 225px;
+    width: 250px;
     display: flex;
     justify-content: space-between;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 10px;
     position: relative;
-    top: 15px;
+    bottom: 10px;
+
 }
 
 @media only screen and (max-width:414px) {
@@ -70,6 +74,10 @@
         padding: 0px 0px 15px 0px;
         position: relative;
         bottom: 5px;
+    }
+
+    .update-post-title {
+        margin-bottom: 10px;
     }
 
     .update-input {
@@ -88,7 +96,6 @@
 
     .update-post-btns {
         position: relative;
-        top: 0px;
+        bottom: 10px;
     }
-
 }
