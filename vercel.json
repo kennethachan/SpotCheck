@@ -1,5 +1,5 @@
 {
-    "version": 1,
+    "version": 2,
     "name": "spot-check",
     "builds": [
        { "src": "app.js", "use": "@vercel/node" }
