@@ -1,10 +1,13 @@
 {
     "version": 2,
-    "name": "spot-check",
-    "builds": [
-       { "src": "app.js", "use": "@vercel/node" }
-    ],
-    "routes": [
-       { "src": "/(.*)", "dest": "/app.js" }
+    "builds": [{
+      "src": "./server.js",
+      "use": "@now/node-server"
+    }],
+    "routes": [{"handle": "filesystem"},
+      {
+        "src": "/.*",
+        "dest": "server.js"
+      }
     ]
- }
+  }
