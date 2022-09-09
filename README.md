@@ -1,6 +1,6 @@
 # SpotCheck
 
-### Date: 9/01/2022
+### Date: 9/09/2022
 
 ### By: Kenneth Chan
 
@@ -30,19 +30,21 @@
 #### When the user visits the site they will be greeted with a sign in page. If the user does not have an account they can easily click "Sign Up". After signing up you will be navigated back to the sign in page where the user will be able to sign in with their newly made account. After signing in the user will be navigated to the feed. The user will be able to scroll through the feed and browse through all the newly found skate spots in NYC! The user will be able to use the navbar to either filter their search by Borough or visit their page where they will be able create, update or delete a post.
 
 ---
-### **Post MVP**
-
-#### User will be able to click on the address of a street spot and will be navigated to another page that will show them the exact location with a marker on the map utlizing mapbox/google maps direction API.  The user will be able to also look up directions utilizing the dirctions interface.
-
----
 
 ### **_Screenshots_**
 
-## ![Image]()
+## ![Image](/client/src/assets/spotcheck-feed.png)
+## ![Image](/client/src/assets/spotcheck-boroughs.png)
+## ![Image](/client/src/assets/spotcheck-spots.png)
+## ![Image](/client/src/assets/spotcheck-details.png)
 
 
 ---
 
 ### **_Credits_**
 
-#### []()
+#### How to set up mapbox: [Mapbox](https://dev.to/hmintoh/how-to-mapbox-api-with-react-js-2433)
+#### How to set up navigation: [Mapbox Directions](https://npm.io/package/react-map-gl-directions)
+#### Skate Spots:[FindSkateSpots](https://findskatespots.com/)
+#### Skate Spots: [Quarter Snacks](https://quartersnacks.com/)
+#### Lorem Ipsum Bio: [Lorem Ipsum](https://www.lipsum.com/)
