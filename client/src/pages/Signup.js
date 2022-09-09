@@ -42,73 +42,74 @@ function Signup(props) {
   }
 
   return (
-    <div className="signup-wrapper">
-      <div>
-        <img className="signup-img" src={cinemaBanks}></img>
+    <div>
+      <div className="signup-wrapper">
+        <div>
+          <img className="signup-img" src={cinemaBanks}></img>
+        </div>
+        <form className="signup-form" onSubmit={handleSubmit}>
+          <h2 className="signup">Sign Up</h2>
+          <div className="input-wrapper">
+            <input
+              className="input"
+              onChange={handleChange}
+              name="email"
+              type="email"
+              placeholder="Email"
+              value={formValues.email}
+              required
+            />
+          </div>
+          <div className="input-wrapper">
+            <input
+              className="input"
+              onChange={handleChange}
+              type="password"
+              name="password"
+              placeholder="Password"
+              value={formValues.password}
+              required
+            />
+          </div>
+          <div className="input-wrapper">
+            <input
+              className="input"
+              onChange={handleChange}
+              name="userName"
+              type="text"
+              placeholder="Username"
+              value={formValues.userName}
+              required
+            />
+          </div>
+          <div className="input-wrapper">
+            <input
+              className="input"
+              onChange={handleChange}
+              type="text"
+              name="image"
+              placeholder="Profile Image"
+              value={formValues.image}
+              required
+            />
+          </div>
+          <button
+            className="signup-btn"
+            disabled={
+              !formValues.email ||
+              (!formValues.password &&
+                formValues.confirmPassword === formValues.password)
+            }
+          >
+            Sign Up
+          </button>
+          <div className="link-switch">
+            <Link className="signin-link" to="/">
+              Already have an account?
+            </Link>
+          </div>
+        </form>
       </div>
-
-      <form className="signup-form" onSubmit={handleSubmit}>
-        <h2 className="signup">Sign Up</h2>
-        <div className="input-wrapper">
-          <input
-            className="input"
-            onChange={handleChange}
-            name="email"
-            type="email"
-            placeholder="Email"
-            value={formValues.email}
-            required
-          />
-        </div>
-        <div className="input-wrapper">
-          <input
-            className="input"
-            onChange={handleChange}
-            type="password"
-            name="password"
-            placeholder="Password"
-            value={formValues.password}
-            required
-          />
-        </div>
-        <div className="input-wrapper">
-          <input
-            className="input"
-            onChange={handleChange}
-            name="userName"
-            type="text"
-            placeholder="Username"
-            value={formValues.userName}
-            required
-          />
-        </div>
-        <div className="input-wrapper">
-          <input
-            className="input"
-            onChange={handleChange}
-            type="text"
-            name="image"
-            placeholder="Profile Image"
-            value={formValues.image}
-            required
-          />
-        </div>
-        <button
-          className="signup-btn"
-          disabled={
-            !formValues.email ||
-            (!formValues.password &&
-              formValues.confirmPassword === formValues.password)
-          }
-        >
-          Sign Up
-        </button>
-        <div className="link-switch">
-          <Link className="signin-link" to="/">
-            Already have an account?
-          </Link>
-        </div>
-      </form>
     </div>
   )
 }

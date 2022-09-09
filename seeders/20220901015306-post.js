@@ -12,7 +12,8 @@ module.exports = {
           description:
             "A low-ish, frontside-for-regular hubba down ten steps, that runs into another ledge. Narrow runway. Skateboarding is forbidden in the park. The Parks Department will tell you to leave if they see you.",
           bustLevel: "High",
-          address: "2nd Ave & E 47th St, New York, NY 10017",
+          address:
+            "Katharine Hepburn Garden, 315 E 47th St, New York, New York 10017",
           profileId: 1,
           boroughId: 1,
           createdAt: new Date(),
@@ -25,7 +26,7 @@ module.exports = {
           description:
             "A low backside-for-regular Philly step into a mellow hill. You are not allowed to skate on school property. Better on nights and weekends.",
           bustLevel: "Medium",
-          address: "570-500 W 59th St, New York, NY 10019",
+          address: "515 W 59th St, New York, NY 10019",
           profileId: 1,
           boroughId: 1,
           createdAt: new Date(),
@@ -38,7 +39,7 @@ module.exports = {
           description:
             "Skateboarding is forbidden in the plaza. Security will come out and tell you to leave as soon as they spot you on the cameras.",
           bustLevel: "High",
-          address: "6th Ave & W 30th St, New York, NY 10001",
+          address: "110 W 30th St, New York, NY 10001",
           profileId: 2,
           boroughId: 1,
           createdAt: new Date(),
@@ -51,7 +52,7 @@ module.exports = {
           description:
             "Stairs and manual pads going down a mellow hill, with sets of twos, fours and fives on the other side + a high frontside for regular round rail down seven stairs.",
           bustLevel: "High",
-          address: "Church St & Dey St, New York, NY 10007",
+          address: "35 Dey St, New York, NY 10007",
           profileId: 2,
           boroughId: 1,
           createdAt: new Date(),
@@ -64,7 +65,8 @@ module.exports = {
           description:
             "Up-ledges that are hard to skate, some low ledges, and pillars to do tricks over. All the ground is good. Cops will sometimes come through and tell you to leave. You may get a ticket for skating — or if you’re lucky — put in a chokehold and pepper sprayed.",
           bustLevel: "High",
-          address: "Eighth Avenue & 59th Street, New York, NY 10019",
+          address:
+            "Columbus Circle, 4-6 Columbus Cir, New York, New York 10023",
           profileId: 3,
           boroughId: 1,
           createdAt: new Date(),
@@ -77,7 +79,7 @@ module.exports = {
           description:
             "Some curbs on good ground and some benches on bad ground. Popular local spot for people from the Upper West Side. Skateboarding is forbidden in the plaza, but the Parks Department doesn’t always hassle you. There’s an elderly crowd in this neighborhood, so be careful when skating here.",
           bustLevel: "Low",
-          address: "Riverside Dr & W 89th St, New York, NY 10024",
+          address: "168 Riverside Dr, New York, NY 10024",
           profileId: 3,
           boroughId: 1,
           createdAt: new Date(),
@@ -90,7 +92,8 @@ module.exports = {
           description:
             "Sorta choppy, steep banks with some waxed edges. Skateboarding is forbidden by park rules. The Parks Department will tell you to leave if they see you. Sometimes, they won’t even let you into the park with a skateboard.",
           bustLevel: "Medium",
-          address: "Riverside Dr & W 145th St, New York, NY 10031",
+          address:
+            "Riverbank State Park, 679 Riverside Dr, New York, New York 10031",
           profileId: 3,
           boroughId: 1,
           createdAt: new Date(),
@@ -103,7 +106,7 @@ module.exports = {
           description:
             "Update — May 2022: They reknobbed the main out ledge here.  Marble ledges everywhere, some of which are knobbed. One goes off a six stair and is backside for regular / frontside for goofy. A low manual pad. Everything sits on a mellow hill. Their security window faces the spot, so they will tell you to leave as soon as they spot you. Better at night, but you’ll get kicked out regardless.",
           bustLevel: "High",
-          address: "Liberty St & Trinity Pl, New York, NY 10006",
+          address: "104 Trinity Pl, New York, NY 10006",
           profileId: 4,
           boroughId: 1,
           createdAt: new Date(),
@@ -116,7 +119,7 @@ module.exports = {
           description:
             "Marble curbs on a street often closed off for outdoor dining. Common meet-up or end of the day spot.",
           bustLevel: "Low",
-          address: "Lafayette St & Spring St, New York, NY 10012",
+          address: "222 Lafayette St, New York, NY 10012",
           profileId: 4,
           boroughId: 1,
           createdAt: new Date(),
@@ -129,7 +132,7 @@ module.exports = {
           description:
             "Marble ledges on not-great ground. One runs backside for regular over a ~fifteen-foot dirt gap. Don’t skate it if it rained the night before unless you wanna get muddy.",
           bustLevel: "Medium",
-          address: "Wall St & South St, New York, NY 10043",
+          address: "58 South St, New York, NY 10043",
           profileId: 4,
           boroughId: 1,
           createdAt: new Date(),
@@ -142,7 +145,7 @@ module.exports = {
           description:
             "Sets of six, three, four and two in consecutive order + marble ledges. Manual pads off steps in front that are a two-second bust.",
           bustLevel: "High",
-          address: "Park Ave & E 47th St, New York, NY 10017",
+          address: "104 E 47th St, New York, NY 10017",
           profileId: 5,
           boroughId: 1,
           createdAt: new Date(),
@@ -155,7 +158,7 @@ module.exports = {
           description:
             "Park rules forbid skateboarding. The Parks Department cruises up and down the waterfront (on bike and car), and will usually tell you to leave as soon as they spot you. On occasion, they will ask for ID and issue you a summons.",
           bustLevel: "High",
-          address: "Canal St & West St, New York, NY 10013",
+          address: "544 Canal St , New York, NY 10013",
           profileId: 5,
           boroughId: 1,
           createdAt: new Date(),
@@ -181,7 +184,7 @@ module.exports = {
           description:
             "It’s a ~six-foot dirt gap into the street, a weird wedge people use to wallie over the gap from the street, and a ride-on ledge.",
           bustLevel: "Low",
-          address: "Allen St & Broome St, New York, NY 10002",
+          address: "92 Allen St, New York, NY 10002",
           profileId: 6,
           boroughId: 1,
           createdAt: new Date(),
@@ -194,7 +197,7 @@ module.exports = {
           description:
             "Former home to the best ledges to ever exist in New York until they knobbed the hell out of them. Portions of them will undergo temporary periods of liberation. There are “No Skateboarding” signs posted. Parks cruises around and will tell you to leave if they spot you. Better on weekends.",
           bustLevel: "Medium",
-          address: "Fulton St & South St, New York, NY 10038",
+          address: "199 Maiden Ln, New York, NY 10038",
           profileId: 6,
           boroughId: 1,
           createdAt: new Date(),
@@ -220,8 +223,7 @@ module.exports = {
           description:
             "You’re not allowed to skate inside the playground, but typically, nobody says anything. Just be mindful if it is crowded with kids.",
           bustLevel: "Low",
-          address:
-            "East Mosholu Parkway South &, Bainbridge Ave, Bronx, NY 10458",
+          address: "3029 Bainbridge Ave, Bronx, NY 10458",
           profileId: 7,
           boroughId: 3,
           createdAt: new Date(),
@@ -234,7 +236,7 @@ module.exports = {
           description:
             "Concreted-over cobblestone bank to crusty hubba-ish ledge against a fence, as seen in every skate video since the mid-2010s.",
           bustLevel: "Low",
-          address: "1261 Merriam Ave, Bronx, NY 10452, USA",
+          address: "1261 Merriam Ave, Bronx, NY 10452",
           profileId: 7,
           boroughId: 3,
           createdAt: new Date(),
@@ -247,7 +249,7 @@ module.exports = {
           description:
             "A foot high manual pad that you can gap out onto from a three-stair above, and a bad two-stair Philly step. Nine times out of ten, there is broken glass scattered about, so be careful.",
           bustLevel: "Low",
-          address: "Hunts Point Av, Bronx, NY 10474, USA",
+          address: "1049 E 163rd St, Bronx,NY 10459",
           profileId: 8,
           boroughId: 3,
           createdAt: new Date(),
@@ -260,7 +262,7 @@ module.exports = {
           description:
             "Steep-ish bank with a rainbow curb and crusty ledge on it.",
           bustLevel: "Medium",
-          address: "E 163rd St & Tiffany St, Bronx, NY 10459",
+          address: "944 Tiffany St, Bronx, NY 10459",
           profileId: 8,
           boroughId: 3,
           createdAt: new Date(),
@@ -273,7 +275,7 @@ module.exports = {
           description:
             "Nice bank/wallridespot, just dont piss off the residents in the complex",
           bustLevel: "Medium",
-          address: "333 E 181st St, Bronx, NY 10457, USA",
+          address: "333 E 181st St, Bronx, NY 10457",
           profileId: 9,
           boroughId: 3,
           createdAt: new Date(),
@@ -286,7 +288,7 @@ module.exports = {
           description:
             "Shin/knee high pop up to the bank.  Just make sure to pop out before you hit the rivets",
           bustLevel: "Medium",
-          address: "55 Meserole St, Brooklyn, NY 11206, USA",
+          address: "55 Meserole St, Brooklyn, NY 11206",
           profileId: 9,
           boroughId: 4,
           createdAt: new Date(),
@@ -299,7 +301,7 @@ module.exports = {
           description:
             "Curbs, a bunch of three sets (some with rails running off the sides of them), a few plastic benches, and chunky concrete ledges across the street.",
           bustLevel: "Low",
-          address: "Continental Army Plaza, S 4th St, Brooklyn, NY 11211, USA",
+          address: "187 S 4th St, Brooklyn, NY 11211",
           profileId: 10,
           boroughId: 4,
           createdAt: new Date(),
@@ -324,7 +326,7 @@ module.exports = {
             "https://storage.googleapis.com/fsscs1/images/large/e548cef2f3e11cc7bf20633fa0f09a05.jpg",
           description: "Crusty run up, welded angles to grind on",
           bustLevel: "Low",
-          address: "345 Park Ave, Brooklyn, NY 11205, USA",
+          address: "345 Park Ave, Brooklyn, NY 11205",
           profileId: 11,
           boroughId: 4,
           createdAt: new Date(),
@@ -350,7 +352,7 @@ module.exports = {
           description:
             "Low, chunky ledges, one of which you can gap to. A gap off a narrow ledge over a pillar.",
           bustLevel: "Low",
-          address: "Bayard St & McGuinness Blvd S, Brooklyn, NY 11222",
+          address: "546 Humboldt St, Brooklyn, NY 11222",
           profileId: 12,
           boroughId: 4,
           createdAt: new Date(),
@@ -363,7 +365,7 @@ module.exports = {
           description:
             "UPDATE — Spring 2022: Spot’s knobbed…again.  A long ledge on top of a platform of four stairs. Some of the bottom steps are waxed, and the flat is good.",
           bustLevel: "Medium",
-          address: "Lafayette Ave & Flatbush Ave, Brooklyn, NY 11217",
+          address: "4 Lafayette Ave, Brooklyn, NY 11217",
           profileId: 12,
           boroughId: 4,
           createdAt: new Date(),
@@ -376,7 +378,7 @@ module.exports = {
           description:
             "Curved marble ledges on a slight hill (you have to avoid the bench at the end) and a marble curb against a fence.",
           bustLevel: "Low",
-          address: "Tillary St & Flatbush Ave Ext, Brooklyn, NY 11201",
+          address: "133 Tillary St, Brooklyn, NY 11201",
           profileId: 13,
           boroughId: 4,
           createdAt: new Date(),
@@ -388,7 +390,7 @@ module.exports = {
             "https://quartersnacks.com/wp-content/uploads/2022/07/IMG_8945.jpeg",
           description: "A narrow street gap and some curbs.",
           bustLevel: "Low",
-          address: "Russell Street &, Nassau Ave, Brooklyn, NY 11222",
+          address: "207 Nassau Ave, Brooklyn, NY 11222",
           profileId: 13,
           boroughId: 4,
           createdAt: new Date(),
@@ -400,7 +402,7 @@ module.exports = {
             "https://quartersnacks.com/wp-content/uploads/2010/05/P4150084.jpg",
           description: "Two-stair marble manual pad.",
           bustLevel: "Low",
-          address: "Union St & Hoyt St, Brooklyn, NY 11231",
+          address: "415 Union St, Brooklyn, NY 11231",
           profileId: 14,
           boroughId: 4,
           createdAt: new Date(),
@@ -413,7 +415,7 @@ module.exports = {
           description:
             "Truck-width gap off a loading dock, onto a concrete platform. Seen in tons of videos.",
           bustLevel: "Low",
-          address: "Flushing Ave & Washington Ave, Brooklyn, NY 11205",
+          address: "50 Washington Ave, Brooklyn, NY 11205",
           profileId: 14,
           boroughId: 4,
           createdAt: new Date(),
@@ -426,7 +428,7 @@ module.exports = {
           description:
             "A backside-for-regular wooden bench into a small brick bank. Skateboarding is forbidden on Pratt property, and you will usually be kicked out from here in 5 seconds.",
           bustLevel: "High",
-          address: "St James Pl & Lafayette Ave, Brooklyn, NY 11205",
+          address: "59 St James Pl, Brooklyn, NY 11205",
           profileId: 15,
           boroughId: 4,
           createdAt: new Date(),
@@ -439,7 +441,7 @@ module.exports = {
           description:
             "A ride-on ledge against a fence off a bank-type thing. Backside for regular, and quite crusty. Bring wax.",
           bustLevel: "Low",
-          address: "36th St & 5th Ave, Brooklyn, NY 11232",
+          address: "484 36th St, Brooklyn, NY 11232",
           profileId: 15,
           boroughId: 4,
           createdAt: new Date(),
@@ -452,7 +454,7 @@ module.exports = {
           description:
             "A banked ledge that runs alongside a ledge that slopes down. Seen in many skate videos. Backside for regular. Bring wax.",
           bustLevel: "Low",
-          address: "Front St & Dock St, Brooklyn, NY 11201",
+          address: "29 Front St, Brooklyn, NY 11201",
           profileId: 16,
           boroughId: 4,
           createdAt: new Date(),
@@ -465,7 +467,7 @@ module.exports = {
           description:
             "High frontside for regular out-ledge over a four, some metal benches, and a metal bench (frontside for regular also) over a ledge gap.",
           bustLevel: "Low",
-          address: "48th Ave & Vernon Blvd, Queens, NY 11101",
+          address: "5-98 48th Ave, Queens, NY 11101",
           profileId: 16,
           boroughId: 5,
           createdAt: new Date(),
@@ -478,7 +480,7 @@ module.exports = {
           description:
             "Big sombrero-shaped piece of concrete that people wallie up to and do manuals / ledge tricks on + a couple chunky concrete ledges.",
           bustLevel: "Low",
-          address: "Borden Ave & 61st St, Queens, NY 11378",
+          address: "55-56 61st St, Queens, NY 11378",
           profileId: 16,
           boroughId: 5,
           createdAt: new Date(),
@@ -491,7 +493,7 @@ module.exports = {
           description:
             "Rough brick banks on even rougher ground, and broken glass everywhere. Also, a ledge between two of those banks. Having big wheels would definitely help your cause. Bring wax.",
           bustLevel: "Low",
-          address: "31st St & 20th Ave, Queens, NY 11105",
+          address: "29-98 20th Ave, Queens, NY 11105",
           profileId: 17,
           boroughId: 5,
           createdAt: new Date(),
@@ -529,7 +531,7 @@ module.exports = {
             "https://storage.googleapis.com/fsscs1/images/large/0c571c9b268dd975483bf4b064294101.jpg",
           description: "Security kick you out real quick.",
           bustLevel: "High",
-          address: "Court Square-23 St Station, Queens, NY 11101, USA",
+          address: "5 Ct Square W, Queens, NY 11101",
           profileId: 18,
           boroughId: 5,
           createdAt: new Date(),
@@ -541,8 +543,7 @@ module.exports = {
             "https://storage.googleapis.com/fsscs1/images/large/scxiqvevrl2242mrls3fgf2rq3gxszys.jpg",
           description: "Gnarly 3 flat 3 set ",
           bustLevel: "Low",
-          address:
-            "Moore Homestead Playground, Broadway & 45th Ave &, 82nd St, Queens, NY 11373, USA",
+          address: "82-2 Broadway, Queens, NY 11373",
           profileId: 18,
           boroughId: 5,
           createdAt: new Date(),
@@ -567,7 +568,7 @@ module.exports = {
           description:
             "Wooden benches that can be skated as banks you ollie up to, weird cement ledges, long triangular flat rails, big concrete wallrides on a wooden platform ",
           bustLevel: "High",
-          address: "Center Blvd & 47th Rd, Queens, NY 11109",
+          address: "9 Center Blvd, Queens, NY 11109",
           profileId: 19,
           boroughId: 5,
           createdAt: new Date(),
@@ -580,7 +581,7 @@ module.exports = {
           description:
             "A bunch of curbs, a random asphalt hip, and a small bank-to-curb on a mellow hill.",
           bustLevel: "Low",
-          address: "Laurel Hill Blvd & 54th Rd, Queens, NY 11378",
+          address: "4715 Laurel Hill Blvd, Queens, NY 11378",
           profileId: 19,
           boroughId: 5,
           createdAt: new Date(),

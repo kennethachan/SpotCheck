@@ -78,6 +78,18 @@
     font-weight: bold;
 }
 
+.disclaimer {
+    font-size: 12px;
+    width: 710px;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    position: fixed;
+    top: 80%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 
 @media only screen and (max-width:414px) {
