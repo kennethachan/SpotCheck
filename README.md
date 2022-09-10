@@ -1,50 +1,70 @@
-# SpotCheck
+# Getting Started with Create React App
 
-### Date: 9/09/2022
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### By: Kenneth Chan
+## Available Scripts
 
-#### [Trello](https://trello.com/b/c0LS4MHm/spotcheck)
+In the project directory, you can run:
 
-#### [Component Hierarchy Diagram & Entity Relationship Diagram](https://drive.google.com/file/d/1wm-ferf-SqTJ4ktA2OnGe54EF-IcT4hH/view?usp=sharing)
+### `npm start`
 
-#### [LinkedIn](https://www.linkedin.com/in/kennethachan/)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
----
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### **_Description_**
+### `npm test`
 
-#### SpotCheck is an app that documents NYC street spots for skateboarders.  A street spot is typically a piece of infrastructure/architecture that is not designed for skateboarding but has certain features that are conducive for skating.  This takes creativity and attention to detail when reading the environment for street spots.  Typically street spots are spread through word of mouth and the spots are given different nicknames by different people.  Street spot names and spot directions could be different depending who you ask.  This app will help document newly made/found skate spots to help the skate community explore and conquer those spots they saw in their favorite skate videos.  The user will create an account and is able to post, update and delete a spot that they have found.  For example if the spot you found has been "knobbed" using skate stoppers or if there has been an increase in security, you can update your post to let everyone know.  You will also be able to search for skate spots by borough.
----
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### **_Technologies_**
+### `npm run build`
 
--Postgresql
--Express
--React
--Node.js
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
----
-### **Getting Started**
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-#### When the user visits the site they will be greeted with a sign in page. If the user does not have an account they can easily click "Sign Up". After signing up you will be navigated back to the sign in page where the user will be able to sign in with their newly made account. After signing in the user will be navigated to the feed. The user will be able to scroll through the feed and browse through all the newly found skate spots in NYC! The user will be able to use the navbar to either filter their search by Borough or visit their page where they will be able create, update or delete a post.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
----
+### `npm run eject`
 
-### **_Screenshots_**
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## ![Image](/client/src/assets/spotcheck-feed.png)
-## ![Image](/client/src/assets/spotcheck-boroughs.png)
-## ![Image](/client/src/assets/spotcheck-spots.png)
-## ![Image](/client/src/assets/spotcheck-details.png)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
----
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### **_Credits_**
+## Learn More
 
-#### How to set up mapbox: [Mapbox](https://dev.to/hmintoh/how-to-mapbox-api-with-react-js-2433)
-#### How to set up navigation: [Mapbox Directions](https://npm.io/package/react-map-gl-directions)
-#### Skate Spots:[FindSkateSpots](https://findskatespots.com/)
-#### Skate Spots: [Quarter Snacks](https://quartersnacks.com/)
-#### Lorem Ipsum Bio: [Lorem Ipsum](https://www.lipsum.com/)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
