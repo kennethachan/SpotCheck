@@ -38,13 +38,18 @@ function SpotDetails(props) {
             <img
               className="profile-icon"
               src={profile.image}
+              alt="profile image"
               onClick={() => {
                 navigate(`/get-profile/${profile.id}`)
               }}
             ></img>
             {profile.userName}{" "}
           </p>
-          <img className="spotdetail-image" src={spot.image}></img>
+          <img
+            className="spotdetail-image"
+            src={spot.image}
+            alt="skate spot"
+          ></img>
         </div>
         <div className="spotdetail-info">
           <h3 className="spotdetail-name">{spot.name}</h3>
@@ -65,6 +70,7 @@ function SpotDetails(props) {
             <img
               className="profile-icon"
               src={profile.image}
+              alt="profile image"
               onClick={() => {
                 navigate(`/get-profile/${profile.id}`)
               }}

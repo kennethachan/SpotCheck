@@ -24,7 +24,7 @@ function Signin(props) {
   return (
     <div>
       <div className="signin-wrapper">
-        <img className="signin-img" src={pipegap}></img>
+        <img className="signin-img" src={pipegap} alt="skate spot"></img>
         <div className="signin-container">
           <form className="signin-form" onSubmit={handleSubmit}>
             <h2 className="signin">Sign In</h2>

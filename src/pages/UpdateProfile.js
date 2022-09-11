@@ -85,7 +85,11 @@ function UpdateProfile({ profile, handleLogOut }) {
     <div>
       <div className="update-profile-container">
         <div className="profile-image-container">
-          <img className="profile-image" src={profileInfo.image}></img>
+          <img
+            className="profile-image"
+            src={profileInfo.image}
+            alt="profile image"
+          ></img>
         </div>
         <form className="update-profile-form" onSubmit={handleSubmit}>
           <h3 className="update-profile-title">Update Your Profile!</h3>

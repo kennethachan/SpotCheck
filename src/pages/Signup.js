@@ -45,7 +45,7 @@ function Signup(props) {
     <div>
       <div className="signup-wrapper">
         <div>
-          <img className="signup-img" src={cinemaBanks}></img>
+          <img className="signup-img" src={cinemaBanks} alt="skate spot"></img>
         </div>
         <form className="signup-form" onSubmit={handleSubmit}>
           <h2 className="signup">Sign Up</h2>

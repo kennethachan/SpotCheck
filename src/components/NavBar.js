@@ -19,13 +19,17 @@ const NavBar = ({ authenticated, profile, handleLogOut }) => {
         </div>
         <nav className="navbar">
           <Link className="nav-link nav-icon" to="/new-post">
-            <img className="nav-icon" src={plus}></img>
+            <img className="nav-icon" src={plus} alt="new post icon"></img>
           </Link>
           <Link className="nav-link nav-icon" to="/profile">
-            <img className="nav-icon" src={profileIcon}></img>
+            <img
+              className="nav-icon"
+              src={profileIcon}
+              alt="profile icon"
+            ></img>
           </Link>
           <Link className="nav-link nav-icon" to="/spots-by-borough">
-            <img className="nav-icon" src={search}></img>
+            <img className="nav-icon" src={search} alt="search icon"></img>
           </Link>
           <Link className="nav-link" onClick={handleLogOut} to="/">
             Sign Out
@@ -46,7 +50,7 @@ const NavBar = ({ authenticated, profile, handleLogOut }) => {
       </div>
       <nav className="navbar">
         <Link className="nav-link nav-icon" to="/spots-by-borough">
-          <img className="nav-icon" src={search}></img>
+          <img className="nav-icon" src={search} alt="search icon"></img>
         </Link>
         <Link className="nav-link" onClick={handleLogOut} to="/">
           Sign In

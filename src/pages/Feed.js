@@ -34,6 +34,7 @@ function Feed(props) {
                     <img
                       className="profile-icon"
                       src={post.Profile.image}
+                      alt="profile picture"
                       onClick={() => {
                         navigate(`/get-profile-from-feed/${post.Profile.id}`)
                       }}

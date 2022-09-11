@@ -34,12 +34,17 @@ function MyProfile({ profile }) {
     return (
       <div>
         <div className="profile-menu">
-          <img className="profile-img" src={user.image}></img>
+          <img
+            className="profile-img"
+            src={user.image}
+            alt="profile image"
+          ></img>
           <h2 className="userName">
             {user.userName}
             <img
               className="edit-profile-icon"
               src={edit}
+              alt="edit icon"
               onClick={() => navigate(`/update-profile/${profile.id}`)}
             ></img>
           </h2>
@@ -53,12 +58,13 @@ function MyProfile({ profile }) {
     return (
       <div>
         <div className="profile-menu">
-          <img className="profile-img" src={user.image}></img>
+          <img className="profile-img" src={user.image} alt="skate spot"></img>
           <h2 className="userName">
             {user.userName}{" "}
             <img
               className="edit-profile-icon"
               src={edit}
+              alt="profile image"
               onClick={() => navigate(`/update-profile/${profile.id}`)}
             ></img>
           </h2>

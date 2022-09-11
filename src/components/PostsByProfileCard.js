@@ -21,7 +21,11 @@ function PostsByProfileCard(props) {
 
   return (
     <div className="post-details-container">
-      <img className="spotdetail-image" src={props.image}></img>
+      <img
+        className="spotdetail-image"
+        src={props.image}
+        alt="skate spot"
+      ></img>
       <div className="spotdetail-info post-font-size">
         <h3 className="spotdetail-name">{props.name}</h3>
         <hr></hr>

@@ -114,7 +114,11 @@ function UpdatePost({ profile }) {
     <div>
       <div className="post-details-container">
         <div>
-          <img className="spotdetail-image" src={spot.image}></img>
+          <img
+            className="spotdetail-image"
+            src={spot.image}
+            alt="skate spot"
+          ></img>
         </div>
         <form className="update-post-form" onSubmit={handleSubmit}>
           <h3 className="update-post-title">Update Your Post!</h3>

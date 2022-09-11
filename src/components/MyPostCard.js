@@ -27,7 +27,11 @@ function MyPostCard(props) {
     <div>
       <div className="post-details-container post-font-size">
         <div>
-          <img className="spotdetail-image" src={props.image}></img>
+          <img
+            className="spotdetail-image"
+            src={props.image}
+            alt="skate spot"
+          ></img>
         </div>
         <div className="spotdetail-info">
           <h3 className="spotdetail-name">
@@ -35,6 +39,7 @@ function MyPostCard(props) {
             <img
               className="edit-icon"
               src={edit}
+              alt="edit icon"
               onClick={() => navigate(`/update-post/${props.id}`)}
             ></img>
             <hr></hr>

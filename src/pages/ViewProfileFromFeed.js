@@ -33,7 +33,11 @@ function ViewProfileFromFeed(props) {
         </Link>
       </p>
       <div className="user-info">
-        <img className="profile-img" src={profile.image}></img>
+        <img
+          className="profile-img"
+          src={profile.image}
+          alt="profile image"
+        ></img>
         <h2 className="userName">{profile.userName}</h2>
         <hr className="bio"></hr>
         <p className="bio">{profile.bio}</p>

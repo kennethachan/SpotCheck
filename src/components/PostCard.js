@@ -7,7 +7,11 @@ function PostCard(props) {
       <div className="postbyborough-wrapper" onClick={props.onClick}>
         <div className="postbyborough-card">
           <div className="spot-info-container">
-            <img className="postbyborough-img" src={props.image}></img>
+            <img
+              className="postbyborough-img"
+              src={props.image}
+              alt="skate spot"
+            ></img>
             <p className="post-name">{props.name} </p>
           </div>
         </div>

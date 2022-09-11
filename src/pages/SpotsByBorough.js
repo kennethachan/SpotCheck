@@ -41,6 +41,7 @@ function SpotsByBorough(props) {
             className="borough-img"
             onClick={() => navigate(`/get-posts/${manhattan.id}`)}
             src={blubba}
+            alt="manhattan skate spots"
           ></img>
           <p className="borough-name">{manhattan.name}</p>
         </div>
@@ -49,6 +50,7 @@ function SpotsByBorough(props) {
             className="borough-img"
             onClick={() => navigate(`/get-posts/${statenIsland.id}`)}
             src={ps6}
+            alt="staten island skate spots"
           ></img>
           <p className="borough-name">{statenIsland.name}</p>
         </div>
@@ -57,6 +59,7 @@ function SpotsByBorough(props) {
             className="borough-img"
             onClick={() => navigate(`/get-posts/${bronx.id}`)}
             src={ogden}
+            alt="bronx skate spots"
           ></img>
           <p className="borough-name">{bronx.name}</p>
         </div>
@@ -65,6 +68,7 @@ function SpotsByBorough(props) {
             className="borough-img"
             onClick={() => navigate(`/get-posts/${brooklyn.id}`)}
             src={mambo}
+            alt="brooklyn skate spots"
           ></img>
           <p className="borough-name">{brooklyn.name}</p>
         </div>
@@ -73,6 +77,7 @@ function SpotsByBorough(props) {
             className="borough-img"
             onClick={() => navigate(`/get-posts/${queens.id}`)}
             src={flushing}
+            alt="queens skate spots"
           ></img>
           <p className="borough-name">{queens.name}</p>
         </div>
