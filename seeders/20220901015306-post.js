@@ -520,7 +520,7 @@ module.exports = {
         },
         {
           name: "Long Island City Waterfront",
-          image: "https://i.ibb.co/wQg5MKt/vernon-jackson-ledge.webp",
+          image: "https://i.ibb.co/xMKf7NY/lic-waterfront.webp",
           description:
             "Wooden benches that can be skated as banks you ollie up to, weird cement ledges, long triangular flat rails, big concrete wallrides on a wooden platform ",
           bustLevel: "High",
