@@ -65,7 +65,7 @@ function Signin(props) {
         </div>
       </div>
       <div className="disclaimer">
-        <p>
+        <p className="disclaimer-info">
           Disclaimer: Skateboarding itself is not illegal in New York City, but
           it is prohibited by park or property rules in many of these places.
           They are merely frequent destinations for street skaters in the city,
