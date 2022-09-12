@@ -1,6 +1,6 @@
 import React from "react"
 import { useState, useEffect } from "react"
-import { useParams, useNavigate, useNavigate } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import axios from "axios"
 import PostsByProfileCard from "../components/PostsByProfileCard"
 import "./PostsByProfile.css"
