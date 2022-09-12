@@ -1,6 +1,6 @@
 import React from "react"
 import { useState, useEffect } from "react"
-import { useParams, Link } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import axios from "axios"
 import PostsByProfileCard from "../components/PostsByProfileCard"
 import "./PostsByProfile.css"
@@ -10,7 +10,7 @@ const URL = "https://spotcheck-backend.herokuapp.com"
 function PostsByProfile(props) {
   const [spots, setSpots] = useState([])
   const [profile, setProfile] = useState([])
-
+  let navigate = useNavigate()
   let { profileId } = useParams()
 
   useEffect(() => {
@@ -26,11 +26,11 @@ function PostsByProfile(props) {
   }
   return (
     <div>
-      <p className="back-to-boroughs">
-        <Link className="back-to-boroughs" to="/spots-by-borough">
-          {" "}
-          Back To Boroughs
-        </Link>
+      <p
+        className="back-to-boroughs"
+        onClick={() => navigate(`/spots-by-borough`)}
+      >
+        Back To Boroughs
       </p>
       <div className="user-info">
         <img
