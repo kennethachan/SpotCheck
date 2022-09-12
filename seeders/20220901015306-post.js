@@ -7,8 +7,7 @@ module.exports = {
       [
         {
           name: "U.N. Hubba",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2022/07/IMG_7589.jpeg",
+          image: "https://i.ibb.co/d6TkH88/un-hubba.webp",
           description:
             "A low-ish, frontside-for-regular hubba down ten steps, that runs into another ledge. Narrow runway. Skateboarding is forbidden in the park. The Parks Department will tell you to leave if they see you.",
           bustLevel: "High",
@@ -21,8 +20,7 @@ module.exports = {
         },
         {
           name: "John Jay Step",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2022/07/IMG_7452.jpeg",
+          image: "https://i.ibb.co/rsbGJyw/john-jay.webp",
           description:
             "A low backside-for-regular Philly step into a mellow hill. You are not allowed to skate on school property. Better on nights and weekends.",
           bustLevel: "Medium",
@@ -34,8 +32,7 @@ module.exports = {
         },
         {
           name: "Big Screen Ledges",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2020/10/IMG_1042.jpeg",
+          image: "https://i.ibb.co/9pG4TsD/big-screen-ledges.webp",
           description:
             "Skateboarding is forbidden in the plaza. Security will come out and tell you to leave as soon as they spot you on the cameras.",
           bustLevel: "High",
@@ -47,8 +44,7 @@ module.exports = {
         },
         {
           name: "World Trade",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2020/10/IMG_0869.jpg",
+          image: "https://i.ibb.co/py5gJDK/world-trade.webp",
           description:
             "Stairs and manual pads going down a mellow hill, with sets of twos, fours and fives on the other side + a high frontside for regular round rail down seven stairs.",
           bustLevel: "High",
@@ -60,8 +56,7 @@ module.exports = {
         },
         {
           name: "Columbus Circle",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2010/05/P6210008.jpg",
+          image: "https://i.ibb.co/kXB2PNf/columbus-circle.webp",
           description:
             "Up-ledges that are hard to skate, some low ledges, and pillars to do tricks over. All the ground is good. Cops will sometimes come through and tell you to leave. You may get a ticket for skating — or if you’re lucky — put in a chokehold and pepper sprayed.",
           bustLevel: "High",
@@ -74,8 +69,7 @@ module.exports = {
         },
         {
           name: "The Monument",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2022/07/IMG_7598.jpeg",
+          image: "https://i.ibb.co/6WPShvD/monument.webp",
           description:
             "Some curbs on good ground and some benches on bad ground. Popular local spot for people from the Upper West Side. Skateboarding is forbidden in the plaza, but the Parks Department doesn’t always hassle you. There’s an elderly crowd in this neighborhood, so be careful when skating here.",
           bustLevel: "Low",
@@ -87,8 +81,7 @@ module.exports = {
         },
         {
           name: "Riverbank State Park",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2010/05/riverbank5.jpg",
+          image: "https://i.ibb.co/zNTyrhk/riverbank.webp",
           description:
             "Sorta choppy, steep banks with some waxed edges. Skateboarding is forbidden by park rules. The Parks Department will tell you to leave if they see you. Sometimes, they won’t even let you into the park with a skateboard.",
           bustLevel: "Medium",
@@ -101,8 +94,7 @@ module.exports = {
         },
         {
           name: "Zuccotti Park",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2010/05/PB020025.jpg",
+          image: "https://i.ibb.co/G2dcW77/zuccotti.webp",
           description:
             "Update — May 2022: They reknobbed the main out ledge here.  Marble ledges everywhere, some of which are knobbed. One goes off a six stair and is backside for regular / frontside for goofy. A low manual pad. Everything sits on a mellow hill. Their security window faces the spot, so they will tell you to leave as soon as they spot you. Better at night, but you’ll get kicked out regardless.",
           bustLevel: "High",
@@ -114,8 +106,7 @@ module.exports = {
         },
         {
           name: "Soho Curbs",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2022/07/IMG_7617.jpeg",
+          image: "https://i.ibb.co/302MRCf/soho-curbs.webp",
           description:
             "Marble curbs on a street often closed off for outdoor dining. Common meet-up or end of the day spot.",
           bustLevel: "Low",
@@ -127,8 +118,7 @@ module.exports = {
         },
         {
           name: "Water Street Benches",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2010/05/waterstbenches-2.jpg",
+          image: "https://i.ibb.co/gzx8TQW/water-st-benches.webp",
           description:
             "Marble ledges on not-great ground. One runs backside for regular over a ~fifteen-foot dirt gap. Don’t skate it if it rained the night before unless you wanna get muddy.",
           bustLevel: "Medium",
@@ -140,8 +130,7 @@ module.exports = {
         },
         {
           name: "Fedex Stairs",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2020/09/IMG_7708.jpeg",
+          image: "https://i.ibb.co/LJ4GRhH/fedex-stairs.webp",
           description:
             "Sets of six, three, four and two in consecutive order + marble ledges. Manual pads off steps in front that are a two-second bust.",
           bustLevel: "High",
@@ -153,8 +142,7 @@ module.exports = {
         },
         {
           name: "Three Up Three Down",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2011/07/IMG_2737.jpg",
+          image: "https://i.ibb.co/SVN792t/3up3down.webp",
           description:
             "Park rules forbid skateboarding. The Parks Department cruises up and down the waterfront (on bike and car), and will usually tell you to leave as soon as they spot you. On occasion, they will ask for ID and issue you a summons.",
           bustLevel: "High",
@@ -166,8 +154,7 @@ module.exports = {
         },
         {
           name: "Police Plaza",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2022/07/IMG_9215.jpeg",
+          image: "https://i.ibb.co/pdF1Gs4/police-plaza.webp",
           description:
             "A platform that has two stairs up one side, and quickly four down the other. There are also a bunch of square rails down varying sets of steps, one of which leads into a weird wallride + some ledges out over past three stairs.More often than not, a cop is going to tell you to leave in under a minute.",
           bustLevel: "High",
@@ -179,8 +166,7 @@ module.exports = {
         },
         {
           name: "Broome & Allen Dirt Gap",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2020/10/IMG_1586.jpg",
+          image: "https://i.ibb.co/pXKGmPX/dirt-gap.webp",
           description:
             "It’s a ~six-foot dirt gap into the street, a weird wedge people use to wallie over the gap from the street, and a ride-on ledge.",
           bustLevel: "Low",
@@ -192,8 +178,7 @@ module.exports = {
         },
         {
           name: "Seaport",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2020/04/seaport-1.jpg",
+          image: "https://i.ibb.co/nRLmjxr/seaport.webp",
           description:
             "Former home to the best ledges to ever exist in New York until they knobbed the hell out of them. Portions of them will undergo temporary periods of liberation. There are “No Skateboarding” signs posted. Parks cruises around and will tell you to leave if they spot you. Better on weekends.",
           bustLevel: "Medium",
@@ -205,8 +190,7 @@ module.exports = {
         },
         {
           name: "ABC Ledges",
-          image:
-            "https://storage.googleapis.com/fsscs1/images/large/6yhqgtmlgcf1scpcaldq7oxxvf2yq2mp.jpg",
+          image: "https://i.ibb.co/X5dDWbD/abc-ledges.webp",
           description:
             "Page Avenue and Haywood Street in Staten Island. It’s only accessible by a car and very far from Manhattan.",
           bustLevel: "Low",
@@ -218,8 +202,7 @@ module.exports = {
         },
         {
           name: "Mosholu Playground Bank",
-          image:
-            "https://storage.googleapis.com/fsscs1/images/large/d89542cf348e2db62052ac12ff3402b9.jpg",
+          image: "https://i.ibb.co/0QnR5h4/mosholu.webp",
           description:
             "You’re not allowed to skate inside the playground, but typically, nobody says anything. Just be mindful if it is crowded with kids.",
           bustLevel: "Low",
@@ -231,8 +214,7 @@ module.exports = {
         },
         {
           name: "Ogden Bank To Ledge",
-          image:
-            "https://storage.googleapis.com/fsscs1/images/large/48ae73f8292e8e769346a40f680ed919.jpg",
+          image: "https://i.ibb.co/kxZj5ZN/ogden.webp",
           description:
             "Concreted-over cobblestone bank to crusty hubba-ish ledge against a fence, as seen in every skate video since the mid-2010s.",
           bustLevel: "Low",
@@ -244,8 +226,7 @@ module.exports = {
         },
         {
           name: "Hunts Point Station",
-          image:
-            "https://storage.googleapis.com/fsscs1/images/large/44bd77a3291c80d0a4d3f94670448216.jpg",
+          image: "https://i.ibb.co/tLHTF7b/hunts-point.webp",
           description:
             "A foot high manual pad that you can gap out onto from a three-stair above, and a bad two-stair Philly step. Nine times out of ten, there is broken glass scattered about, so be careful.",
           bustLevel: "Low",
@@ -257,8 +238,7 @@ module.exports = {
         },
         {
           name: "Tiffany Banks",
-          image:
-            "https://storage.googleapis.com/fsscs1/images/large/1aafb23f785489352d50d9541f804472.jpg",
+          image: "https://i.ibb.co/f9qqx9w/tiffany-banks.webp",
           description:
             "Steep-ish bank with a rainbow curb and crusty ledge on it.",
           bustLevel: "Medium",
@@ -270,8 +250,7 @@ module.exports = {
         },
         {
           name: "Twin Parks - Bank To Ledge",
-          image:
-            "https://storage.googleapis.com/fsscs1/images/large/msilwx6yfu6m0havpei69y5fyxgj71qj.jpg",
+          image: "https://i.ibb.co/z6Cn0xh/twin-parks.webp",
           description:
             "Nice bank/wallridespot, just dont piss off the residents in the complex",
           bustLevel: "Medium",
@@ -283,8 +262,7 @@ module.exports = {
         },
         {
           name: "Verizon Banks",
-          image:
-            "https://storage.googleapis.com/fsscs1/images/large/90f5b03ca7aadab0e471bbfa0fc8fa76.jpg",
+          image: "https://i.ibb.co/BggKXzf/verizon-banks.webp",
           description:
             "Shin/knee high pop up to the bank.  Just make sure to pop out before you hit the rivets",
           bustLevel: "Medium",
@@ -296,8 +274,7 @@ module.exports = {
         },
         {
           name: "Washington Monument",
-          image:
-            "https://storage.googleapis.com/fsscs1/images/large/ab2ada4bec9aa4ee74ed360fc30fb5c5.jpg",
+          image: "https://i.ibb.co/pJw2X76/washington-monument.webp",
           description:
             "Curbs, a bunch of three sets (some with rails running off the sides of them), a few plastic benches, and chunky concrete ledges across the street.",
           bustLevel: "Low",
@@ -309,8 +286,7 @@ module.exports = {
         },
         {
           name: "Mambo Bar",
-          image:
-            "https://storage.googleapis.com/fsscs1/images/large/827698ef4a23ac58e80499a49486c74e.jpg",
+          image: "https://i.ibb.co/wSTw7YK/mambo.webp",
           description:
             "A classic piece of a Brooklyn crust. A chunky backside-for-regular cement ledge into a cellar door.",
           bustLevel: "Low",
@@ -322,8 +298,7 @@ module.exports = {
         },
         {
           name: "Metal Bank",
-          image:
-            "https://storage.googleapis.com/fsscs1/images/large/e548cef2f3e11cc7bf20633fa0f09a05.jpg",
+          image: "https://i.ibb.co/cYSGXMV/metal-bank.webp",
           description: "Crusty run up, welded angles to grind on",
           bustLevel: "Low",
           address: "345 Park Ave, Brooklyn, NY 11205",
@@ -334,8 +309,7 @@ module.exports = {
         },
         {
           name: "Home Depot Banks",
-          image:
-            "https://storage.googleapis.com/fsscs1/images/large/cdfd783b2f855184b6318f1bb76b7a81.jpg",
+          image: "https://i.ibb.co/pK22pM7/home-depot-banks.webp",
           description:
             "Falling apart over the years luckily the spot is at a home depot",
           bustLevel: "Medium",
@@ -347,8 +321,7 @@ module.exports = {
         },
         {
           name: "Polish Park",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2010/05/polishpark5.jpg",
+          image: "https://i.ibb.co/VvS2F4m/polish-park.webp",
           description:
             "Low, chunky ledges, one of which you can gap to. A gap off a narrow ledge over a pillar.",
           bustLevel: "Low",
@@ -360,8 +333,7 @@ module.exports = {
         },
         {
           name: "BAM",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2020/09/IMG_9685.jpg",
+          image: "https://i.ibb.co/Vq5sLjW/bam.webp",
           description:
             "UPDATE — Spring 2022: Spot’s knobbed…again.  A long ledge on top of a platform of four stairs. Some of the bottom steps are waxed, and the flat is good.",
           bustLevel: "Medium",
@@ -373,8 +345,7 @@ module.exports = {
         },
         {
           name: "BAM 2",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2016/03/bam2-3.jpg",
+          image: "https://i.ibb.co/R9LqWY4/bam2.webp",
           description:
             "Curved marble ledges on a slight hill (you have to avoid the bench at the end) and a marble curb against a fence.",
           bustLevel: "Low",
@@ -386,8 +357,7 @@ module.exports = {
         },
         {
           name: "McGolrick Park",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2022/07/IMG_8945.jpeg",
+          image: "https://i.ibb.co/MDzCk4T/mcgolrick.webp",
           description: "A narrow street gap and some curbs.",
           bustLevel: "Low",
           address: "207 Nassau Ave, Brooklyn, NY 11222",
@@ -398,8 +368,7 @@ module.exports = {
         },
         {
           name: "Carroll Manual Pad",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2010/05/P4150084.jpg",
+          image: "https://i.ibb.co/bgpZ0pw/carroll-manny-pads.webp",
           description: "Two-stair marble manual pad.",
           bustLevel: "Low",
           address: "415 Union St, Brooklyn, NY 11231",
@@ -410,8 +379,7 @@ module.exports = {
         },
         {
           name: "Fish Gap",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2010/05/P5120005.jpg",
+          image: "https://i.ibb.co/18C0TYQ/fish-gap.webp",
           description:
             "Truck-width gap off a loading dock, onto a concrete platform. Seen in tons of videos.",
           bustLevel: "Low",
@@ -423,8 +391,7 @@ module.exports = {
         },
         {
           name: "Pratt",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2010/05/P4150067.jpg",
+          image: "https://i.ibb.co/tYcQhrj/pratt.webp",
           description:
             "A backside-for-regular wooden bench into a small brick bank. Skateboarding is forbidden on Pratt property, and you will usually be kicked out from here in 5 seconds.",
           bustLevel: "High",
@@ -436,8 +403,7 @@ module.exports = {
         },
         {
           name: "Shell Ledge ",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2022/07/IMG_7122.jpeg",
+          image: "https://i.ibb.co/7JvfjhD/shell.webp",
           description:
             "A ride-on ledge against a fence off a bank-type thing. Backside for regular, and quite crusty. Bring wax.",
           bustLevel: "Low",
@@ -449,8 +415,7 @@ module.exports = {
         },
         {
           name: "Front Street Ledge",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2010/05/frontst4.jpg",
+          image: "https://i.ibb.co/zZfDTxm/front-st-ledge.webp",
           description:
             "A banked ledge that runs alongside a ledge that slopes down. Seen in many skate videos. Backside for regular. Bring wax.",
           bustLevel: "Low",
@@ -462,8 +427,7 @@ module.exports = {
         },
         {
           name: "Vernon-Jackson Ledge",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2020/09/IMG_9920.jpeg",
+          image: "https://i.ibb.co/wQg5MKt/vernon-jackson-ledge.webp",
           description:
             "High frontside for regular out-ledge over a four, some metal benches, and a metal bench (frontside for regular also) over a ledge gap.",
           bustLevel: "Low",
@@ -475,8 +439,7 @@ module.exports = {
         },
         {
           name: "The Sombrero",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2019/01/IMG_8693.jpg",
+          image: "https://i.ibb.co/6vwYNmd/sombero.webp",
           description:
             "Big sombrero-shaped piece of concrete that people wallie up to and do manuals / ledge tricks on + a couple chunky concrete ledges.",
           bustLevel: "Low",
@@ -488,8 +451,7 @@ module.exports = {
         },
         {
           name: "Con-Edison Banks",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2010/05/P4150011.jpg",
+          image: "https://i.ibb.co/JzMK0bz/con-edison-banks.webp",
           description:
             "Rough brick banks on even rougher ground, and broken glass everywhere. Also, a ledge between two of those banks. Having big wheels would definitely help your cause. Bring wax.",
           bustLevel: "Low",
@@ -501,8 +463,7 @@ module.exports = {
         },
         {
           name: "P.S. 239",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2022/07/IMG_9606.jpeg",
+          image: "https://i.ibb.co/NpdQfqL/ps239.webp",
           description:
             "A three-stair Philly step and a curved ledge / platform on basketball court ground.You are technically not allowed to skate on school property, but as long as school is not in session, nobody really hassles you.",
           bustLevel: "Medium",
@@ -514,8 +475,7 @@ module.exports = {
         },
         {
           name: "JFK Banks",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2011/07/IMG_2601.jpg",
+          image: "https://i.ibb.co/Jk753WZ/jfk.webp",
           description:
             "Cement banks with a ledge on top and hips at the end. Seen in videos as far back as the 1980s.",
           bustLevel: "High",
@@ -527,8 +487,7 @@ module.exports = {
         },
         {
           name: "Citibank Pyramids",
-          image:
-            "https://storage.googleapis.com/fsscs1/images/large/0c571c9b268dd975483bf4b064294101.jpg",
+          image: "https://i.ibb.co/hy46HQt/citibank.webp",
           description: "Security kick you out real quick.",
           bustLevel: "High",
           address: "5 Ct Square W, Queens, NY 11101",
@@ -539,8 +498,7 @@ module.exports = {
         },
         {
           name: "Moore Homestead Playground 3 Flat 3",
-          image:
-            "https://storage.googleapis.com/fsscs1/images/large/scxiqvevrl2242mrls3fgf2rq3gxszys.jpg",
+          image: "https://i.ibb.co/DptRXdD/moore-playground.webp",
           description: "Gnarly 3 flat 3 set ",
           bustLevel: "Low",
           address: "82-2 Broadway, Queens, NY 11373",
@@ -551,8 +509,7 @@ module.exports = {
         },
         {
           name: "Hillcrest High School",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2018/01/hillcrest1.jpg",
+          image: "https://i.ibb.co/yPPrM3c/hillcrest-hs.webp",
           description: "Lots of nice banks. Best to skate after school hours ",
           bustLevel: "Medium",
           address: "160-33 Highland Ave, Queens, NY 11432",
@@ -563,8 +520,7 @@ module.exports = {
         },
         {
           name: "Long Island City Waterfront",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2020/09/IMG_9930.jpeg",
+          image: "https://i.ibb.co/wQg5MKt/vernon-jackson-ledge.webp",
           description:
             "Wooden benches that can be skated as banks you ollie up to, weird cement ledges, long triangular flat rails, big concrete wallrides on a wooden platform ",
           bustLevel: "High",
@@ -576,8 +532,7 @@ module.exports = {
         },
         {
           name: "Cemetery Curbs",
-          image:
-            "https://quartersnacks.com/wp-content/uploads/2020/10/IMG_3140.jpg",
+          image: "https://i.ibb.co/7kYJ9z6/cemetary-curbs.webp",
           description:
             "A bunch of curbs, a random asphalt hip, and a small bank-to-curb on a mellow hill.",
           bustLevel: "Low",
