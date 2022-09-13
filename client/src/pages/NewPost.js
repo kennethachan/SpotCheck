@@ -46,6 +46,8 @@ function NewPost({ profile }) {
       boroughId: formValues.boroughId,
     }
 
+    console.log(data.image)
+
     const newPost = await axios
       .post(`${URL}/api/posts/new-post`, data)
       .then((res) => {
@@ -81,12 +83,13 @@ function NewPost({ profile }) {
           />
         </div>
         <div className="input-wrapper">
+          <label>Upload Image </label>
           <input
             className="new-post-input"
             onChange={handleChange}
             name="image"
-            type="text"
-            placeholder="Image URL"
+            type="file"
+            placeholder="Upload Image Here"
             value={formValues.image}
             required
           />

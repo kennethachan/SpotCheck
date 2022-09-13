@@ -1,4 +1,5 @@
 const { Post, Borough, Profile } = require("../models")
+const { cloudinary } = require("../utilities/cloudinary.js")
 
 const GetPosts = async (req, res) => {
   try {
@@ -56,13 +57,50 @@ const GetPostsByBoroughId = async (req, res) => {
   }
 }
 
+// const CreatePost = async (req, res) => {
+//   try {
+//     const newPost = await new Post(req.body)
+//     await newPost.save()
+//     res.send(newPost)
+//   } catch (error) {
+//     throw error
+//   }
+// }
+
 const CreatePost = async (req, res) => {
   try {
-    const newPost = await new Post(req.body)
-    await newPost.save()
-    res.send(newPost)
+    const {
+      name,
+      image,
+      address,
+      description,
+      bustLevel,
+      profileId,
+      boroughId,
+    } = req.body
+
+    const uploadedRes = await cloudinary.uploader.upload(image, {
+      upload_preset: "SpotCheck",
+    })
+    // const url = await uploadedRes.url
+    // console.log(url)
+    console.log(uploadedRes)
+    console.log(req.body)
+
+    // setTimeout(async () => {
+    //   const post = await Post.create({
+    //     name: name,
+    //     image: url,
+    //     address: address,
+    //     description: description,
+    //     bustLevel: bustLevel,
+    //     profileId: profileId,
+    //     boroughId: boroughId,
+    //   })
+    //   res.send(post)
+    // }, 1500)
   } catch (error) {
-    throw error
+    console.log(error.message)
   }
 }
 
