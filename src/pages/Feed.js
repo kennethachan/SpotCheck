@@ -15,7 +15,7 @@ function Feed(props) {
   }, [])
 
   const getPosts = async () => {
-    const res = await axios.get(`${URL}`)
+    const res = await axios.get(`${URL}/api/posts/get-posts`)
     console.log(res.data)
     setPosts(res.data)
   }
