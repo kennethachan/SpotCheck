@@ -1,103 +1,50 @@
-// "use strict"
+"use strict"
 
-// const fs = require("fs")
-// const path = require("path")
-// const Sequelize = require("sequelize")
-// const basename = path.basename(__filename)
-// const env = process.env.NODE_ENV || "development"
-// const config = require(__dirname + "/../config/config.js")[env]
-// const db = {}
+const fs = require("fs")
+const path = require("path")
+const Sequelize = require("sequelize")
+const basename = path.basename(__filename)
+const env = process.env.NODE_ENV || "development"
+const config = require(__dirname + "/../config/config.js")[env]
+const db = {}
 
-// let sequelize
-// if (config.use_env_variable || process.env.DATABASE_URL) {
-//   sequelize = new Sequelize(process.env[config.use_env_variable] || process.env.DATABASE_URL, config)
-// } else {
-//   sequelize = new Sequelize(
-//     config.database,
-//     config.username,
-//     config.password,
-//     config
-//   )
-// }
+let dbURL = "postgresql://spotcheck_db_user:nZuliKjSlhF21x6llqPVX0mtTA8Wxgm3@dpg-cv74co7noe9s73c46t9g-a/spotcheck_db"
 
-// fs.readdirSync(__dirname)
-//   .filter((file) => {
-//     return (
-//       file.indexOf(".") !== 0 && file !== basename && file.slice(-3) === ".js"
-//     )
-//   })
-//   .forEach((file) => {
-//     const model = require(path.join(__dirname, file))(
-//       sequelize,
-//       Sequelize.DataTypes
-//     )
-//     db[model.name] = model
-//   })
-
-// Object.keys(db).forEach((modelName) => {
-//   if (db[modelName].associate) {
-//     db[modelName].associate(db)
-//   }
-// })
-
-// db.sequelize = sequelize
-// db.Sequelize = Sequelize
-
-// module.exports = db
-
-
-
-
-"use strict";
-
-const fs = require("fs");
-const path = require("path");
-const Sequelize = require("sequelize");
-const basename = path.basename(__filename);
-const env = process.env.NODE_ENV || "development";
-const config = require(__dirname + "/../config/config.js")[env];
-const db = {};
-
-let sequelize;
-
-const databaseUrl = process.env.DATABASE_URL || (config.use_env_variable ? process.env[config.use_env_variable] : null);
-
-if (databaseUrl) {
-  sequelize = new Sequelize(databaseUrl, {
-    dialect: "postgres",
-    dialectOptions: env === "production" ? {
-      ssl: {
-        require: true,
-        rejectUnauthorized: false,
-      }
-    } : {}
-  });
+let sequelize
+if (config.use_env_variable || dbURL) {
+  sequelize = new Sequelize(process.env[config.use_env_variable] || dbURL, config)
 } else {
   sequelize = new Sequelize(
     config.database,
     config.username,
     config.password,
     config
-  );
+  )
 }
 
-// Load models dynamically
 fs.readdirSync(__dirname)
-  .filter((file) => file.indexOf(".") !== 0 && file !== basename && file.slice(-3) === ".js")
+  .filter((file) => {
+    return (
+      file.indexOf(".") !== 0 && file !== basename && file.slice(-3) === ".js"
+    )
+  })
   .forEach((file) => {
-    const model = require(path.join(__dirname, file))(sequelize, Sequelize.DataTypes);
-    db[model.name] = model;
-  });
+    const model = require(path.join(__dirname, file))(
+      sequelize,
+      Sequelize.DataTypes
+    )
+    db[model.name] = model
+  })
 
-// Associate models
 Object.keys(db).forEach((modelName) => {
   if (db[modelName].associate) {
-    db[modelName].associate(db);
+    db[modelName].associate(db)
   }
-});
+})
 
-db.sequelize = sequelize;
-db.Sequelize = Sequelize;
+db.sequelize = sequelize
+db.Sequelize = Sequelize
 
-module.exports = db;
+module.exports = db
+
 
