@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react"
 import axios from "axios"
 
-const URL = "https://spotcheck-backend.herokuapp.com"
+const URL = `https://spotcheck.onrender.com`
 
 function MyPostCard(props) {
   let navigate = useNavigate()

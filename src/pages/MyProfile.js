@@ -6,7 +6,7 @@ import "./MyProfile.css"
 import MyPostCard from "../components/MyPostCard"
 import edit from "../assets/white-edit.png"
 
-const URL = "https://spotcheck-backend.herokuapp.com"
+const URL = `https://spotcheck.onrender.com`
 
 function MyProfile({ profile }) {
   let navigate = useNavigate()

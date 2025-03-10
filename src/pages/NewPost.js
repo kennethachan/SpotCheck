@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import axios from "axios"
 import "./NewPost.css"
 
-const URL = "https://spotcheck-backend.herokuapp.com"
+const URL = `https://spotcheck.onrender.com`
 
 function NewPost({ profile }) {
   let navigate = useNavigate()

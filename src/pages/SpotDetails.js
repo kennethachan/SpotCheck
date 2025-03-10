@@ -5,7 +5,7 @@ import axios from "axios"
 import "./SpotDetails.css"
 import Directions from "../components/Directions"
 
-const URL = "https://spotcheck-backend.herokuapp.com"
+const URL = `https://spotcheck.onrender.com`
 
 function SpotDetails(props) {
   const [spot, setSpot] = useState([])

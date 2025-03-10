@@ -9,7 +9,7 @@ import ogden from "../assets/ogden.jpeg"
 import mambo from "../assets/mambo.jpeg"
 import flushing from "../assets/flushing.jpeg"
 
-const URL = "https://spotcheck-backend.herokuapp.com"
+const URL = `https://spotcheck.onrender.com`
 
 function SpotsByBorough(props) {
   let navigate = useNavigate()

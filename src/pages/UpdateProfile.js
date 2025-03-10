@@ -5,7 +5,7 @@ import { confirm } from "react-confirm-box"
 import axios from "axios"
 import "./UpdateProfile.css"
 
-const URL = "https://spotcheck-backend.herokuapp.com"
+const URL = `https://spotcheck.onrender.com`
 
 function UpdateProfile({ profile, handleLogOut }) {
   let navigate = useNavigate()

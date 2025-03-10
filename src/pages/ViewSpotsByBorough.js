@@ -5,7 +5,7 @@ import { useNavigate, Link } from "react-router-dom"
 import axios from "axios"
 import PostCard from "../components/PostCard"
 
-const URL = "https://spotcheck-backend.herokuapp.com"
+const URL = `https://spotcheck.onrender.com`
 
 function ViewSpotsByBorough(props) {
   const [spots, setSpots] = useState([])

@@ -7,7 +7,7 @@ import { useEffect } from "react"
 import { useParams } from "react-router-dom"
 import "./UpdatePost.css"
 
-const URL = "https://spotcheck-backend.herokuapp.com"
+const URL = `https://spotcheck.onrender.com`
 
 function UpdatePost({ profile }) {
   console.log(profile.id)

@@ -5,7 +5,7 @@ import axios from "axios"
 import "./Signup.css"
 import cinemaBanks from "../assets/cinema-banks.jpeg"
 
-const URL = "https://spotcheck-backend.herokuapp.com"
+const URL = `https://spotcheck.onrender.com`
 
 function Signup(props) {
   let navigate = useNavigate()

@@ -2,7 +2,7 @@ import React from "react"
 import axios from "axios"
 import { useState, useEffect } from "react"
 
-const URL = "https://spotcheck-backend.herokuapp.com"
+const URL = `https://spotcheck.onrender.com`
 
 function PostsByProfileCard(props) {
   const [profile, setProfile] = useState([])

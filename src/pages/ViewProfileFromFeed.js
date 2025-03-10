@@ -5,7 +5,7 @@ import axios from "axios"
 import PostsByProfileCard from "../components/PostsByProfileCard"
 import "./PostsByProfile.css"
 
-const URL = "https://spotcheck-backend.herokuapp.com"
+const URL = `https://spotcheck.onrender.com`
 
 function ViewProfileFromFeed(props) {
   const [spots, setSpots] = useState([])
