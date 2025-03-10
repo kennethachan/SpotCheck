@@ -27,7 +27,7 @@ module.exports = {
     dialect: "postgres",
   },
   production: {
-    use_env_variable: "postgresql://spotcheck_db_user:nZuliKjSlhF21x6llqPVX0mtTA8Wxgm3@dpg-cv74co7noe9s73c46t9g-a/spotcheck_db",
+    use_env_variable: "DATABASE_URL",
     dialect: "postgres",
     dialectOptions: {
       ssl: {
