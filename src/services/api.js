@@ -1,6 +1,6 @@
 import Axios from "axios"
 
-export const BASE_URL = "https://spotcheck-backend.herokuapp.com"
+export const BASE_URL = `https://spotcheck.onrender.com`
 
 const Client = Axios.create({ baseURL: BASE_URL })
 

@@ -17,7 +17,7 @@ import PostsByProfile from "./pages/PostsByProfile"
 import ViewProfileFromFeed from "./pages/ViewProfileFromFeed"
 import NewPost from "./pages/NewPost"
 
-const URL = "https://spotcheck-backend.herokuapp.com"
+const URL = `https://spotcheck.onrender.com`
 
 function App() {
   const [authenticated, toggleAuthenticated] = useState(false)
