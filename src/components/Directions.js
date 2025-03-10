@@ -6,7 +6,7 @@ import "@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css"
 import { useRef, useEffect, useState } from "react"
 import mapboxgl from "!mapbox-gl" // eslint-disable-line import/no-webpack-loader-syntax
 
-mapboxgl.accessToken = pk.eyJ1Ijoia2Vuc2s4cyIsImEiOiJjbTgzMnlwdjcxcWdyMnhva2g0eDNtN2g3In0.tAfX2WvXhJT5lGX21Tj-Ew
+mapboxgl.accessToken = "pk.eyJ1Ijoia2Vuc2s4cyIsImEiOiJjbTgzMnlwdjcxcWdyMnhva2g0eDNtN2g3In0.tAfX2WvXhJT5lGX21Tj-Ew"
 
 export default function Directions() {
   const mapContainer = useRef(null)
