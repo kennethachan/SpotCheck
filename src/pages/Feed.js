@@ -21,7 +21,7 @@ function Feed(props) {
   }
 
   return (
-    <div>
+    <div className="feed-wrapper">
       <div className="post-container">
         {posts
           .slice(0)

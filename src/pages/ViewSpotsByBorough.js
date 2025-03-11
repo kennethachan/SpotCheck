@@ -25,12 +25,7 @@ function ViewSpotsByBorough(props) {
   return (
     <div>
       <div>
-        <p
-          className="back-to-boroughs"
-          onClick={() => navigate(`/spots-by-borough`)}
-        >
-          Back To Boroughs
-        </p>
+        
       </div>
       <div className="postbyborough-container">
         {spots

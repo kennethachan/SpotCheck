@@ -26,12 +26,7 @@ function PostsByProfile(props) {
   }
   return (
     <div>
-      <p
-        className="back-to-boroughs"
-        onClick={() => navigate(`/spots-by-borough`)}
-      >
-        Back To Boroughs
-      </p>
+    
       <div className="user-info">
         <img
           className="profile-img"

@@ -8,7 +8,7 @@
   margin-bottom: 50px;
   }
   
-@media only screen and (max-width:414px) {
+@media only screen and (max-width:768px) {
   .map-container {
     width: 414px;
     border-radius: 0px;
