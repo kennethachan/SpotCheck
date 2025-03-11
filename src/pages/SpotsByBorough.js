@@ -34,7 +34,7 @@ function SpotsByBorough(props) {
   }
 
   return (
-    <div>
+    <div className="borough-wrapper">
       <div className="borough-container">
         <div className="borough-card">
           <img
