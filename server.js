@@ -30,14 +30,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Serve static React files
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.static(path.join(__dirname, "build")));
 
 // API routes
 app.use("/api", AppRouter);
 
 // Catch-all route for React client-side routing
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client/build", "index.html"));
+  res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
