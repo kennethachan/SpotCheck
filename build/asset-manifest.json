@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2ffa9cec.css",
+    "main.js": "/static/js/main.17b71a8c.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/white-edit.png": "/static/media/white-edit.683629ff63755edab10b.png",
+    "static/media/ps6.jpeg": "/static/media/ps6.d98dd6b6209e2d2f847e.jpeg",
+    "static/media/ogden.jpeg": "/static/media/ogden.56103be88e8c93414a29.jpeg",
+    "static/media/blubba.jpeg": "/static/media/blubba.22187823ac1ffc711352.jpeg",
+    "static/media/cinema-banks.jpeg": "/static/media/cinema-banks.6d62f8d767d636b4f915.jpeg",
+    "static/media/pipe-gap.jpeg": "/static/media/pipe-gap.19a349162fa54873adb7.jpeg",
+    "static/media/mambo.jpeg": "/static/media/mambo.ec409fb8be9c107bb80b.jpeg",
+    "static/media/flushing.jpeg": "/static/media/flushing.dea7e58b4ddda391a9da.jpeg",
+    "static/media/edit.png": "/static/media/edit.fc4394c54ba09aa79b11.png",
+    "static/media/profile.png": "/static/media/profile.9e6f47cc056ecea5ea5b.png",
+    "index.html": "/index.html",
+    "main.2ffa9cec.css.map": "/static/css/main.2ffa9cec.css.map",
+    "main.17b71a8c.js.map": "/static/js/main.17b71a8c.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ffa9cec.css",
+    "static/js/main.17b71a8c.js"
+  ]
+}
